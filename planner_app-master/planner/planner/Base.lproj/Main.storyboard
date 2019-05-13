@@ -178,7 +178,7 @@
                     <navigationItem key="navigationItem" title="Assignment Tracker" id="hBA-MR-KXt">
                         <barButtonItem key="leftBarButtonItem" title="Home" id="ex6-R5-3nZ">
                             <connections>
-                                <segue destination="BYZ-38-t0r" kind="modal" id="Sqn-E1-Tua"/>
+                                <segue destination="BYZ-38-t0r" kind="show" id="D05-Ui-M31"/>
                             </connections>
                         </barButtonItem>
                         <rightBarButtonItems>
@@ -676,90 +676,124 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                         <subviews>
-                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="00:00:00" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="cLj-JB-3RH">
-                                <rect key="frame" x="138" y="356" width="138" height="257"/>
+                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="00:00:00" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="cLj-JB-3RH">
+                                <rect key="frame" x="81" y="488" width="235" height="136"/>
                                 <constraints>
-                                    <constraint firstAttribute="width" constant="138" id="b8Q-vE-kN5"/>
+                                    <constraint firstAttribute="height" constant="136" id="Yem-Ae-zJ0"/>
+                                    <constraint firstAttribute="width" constant="235" id="ngC-Hg-Aco"/>
+                                    <constraint firstAttribute="width" secondItem="cLj-JB-3RH" secondAttribute="height" multiplier="235:136" id="rpP-pZ-xIg"/>
                                 </constraints>
-                                <fontDescription key="fontDescription" type="boldSystem" pointSize="27"/>
-                                <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="42"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="dhd-bz-0qM">
-                                <rect key="frame" x="314" y="735" width="46" height="30"/>
+                                <rect key="frame" x="255" y="632" width="86" height="41"/>
+                                <color key="backgroundColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <constraints>
-                                    <constraint firstAttribute="width" constant="46" id="JVs-FV-0IH"/>
+                                    <constraint firstAttribute="width" secondItem="dhd-bz-0qM" secondAttribute="height" multiplier="86:41" id="2eR-fQ-6wQ"/>
+                                    <constraint firstAttribute="height" constant="41" id="b7R-45-GFG"/>
+                                    <constraint firstAttribute="width" constant="86" id="s2d-Ez-6l2"/>
                                 </constraints>
-                                <fontDescription key="fontDescription" type="system" weight="heavy" pointSize="15"/>
+                                <fontDescription key="fontDescription" type="system" weight="heavy" pointSize="24"/>
                                 <state key="normal" title="Stop">
-                                    <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                     <color key="titleShadowColor" red="0.5" green="0.5" blue="0.5" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 </state>
                                 <connections>
                                     <action selector="stop" destination="qMw-1i-Q0k" eventType="touchUpInside" id="CDA-Ae-WhI"/>
                                 </connections>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="6Yz-Ds-7fh">
-                                <rect key="frame" x="20" y="735" width="46" height="30"/>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Za5-Kh-q41">
+                                <rect key="frame" x="122" y="696" width="131" height="48"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="30"/>
+                                <state key="normal" title="View Data">
+                                    <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </state>
+                                <connections>
+                                    <action selector="viewData:" destination="qMw-1i-Q0k" eventType="touchUpInside" id="SBZ-a8-yNf"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="wordWrap" translatesAutoresizingMaskIntoConstraints="NO" id="QOG-UK-aXe">
+                                <rect key="frame" x="16" y="98" width="343" height="48"/>
+                                <fontDescription key="fontDescription" style="UICTFontTextStyleTitle0"/>
+                                <state key="normal" title="Sleep Tracker">
+                                    <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                    <color key="titleShadowColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </state>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="wordWrap" translatesAutoresizingMaskIntoConstraints="NO" id="p7L-VO-ZRY">
+                                <rect key="frame" x="36" y="288" width="305" height="192"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <constraints>
-                                    <constraint firstAttribute="width" constant="46" id="KfU-KU-vig"/>
+                                    <constraint firstAttribute="width" constant="305" id="S8d-1B-Wye"/>
+                                    <constraint firstAttribute="height" constant="192" id="VIX-Ci-bGY"/>
+                                    <constraint firstAttribute="width" secondItem="p7L-VO-ZRY" secondAttribute="height" multiplier="305:192" id="jIA-eb-0iA"/>
                                 </constraints>
-                                <fontDescription key="fontDescription" type="system" weight="heavy" pointSize="15"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="30"/>
+                                <state key="normal">
+                                    <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </state>
+                            </button>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" textAlignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="xsP-Bh-cHb">
+                                <rect key="frame" x="16" y="152" width="344" height="128"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" secondItem="xsP-Bh-cHb" secondAttribute="height" multiplier="43:16" id="YmB-yu-hRD"/>
+                                    <constraint firstAttribute="height" constant="128" id="ZyE-V7-fq3"/>
+                                    <constraint firstAttribute="width" constant="344" id="wJP-xB-6B2"/>
+                                </constraints>
+                                <string key="text">This application allows you to monitor and store your sleep data. Tap "start" before going to bed. Stop the tracker by hitting "stop" each morning. The application will save your data to the iOS Health App, which can also be accessed by clicking the "View Data" button below. </string>
+                                <color key="textColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="6Yz-Ds-7fh">
+                                <rect key="frame" x="36" y="632" width="86" height="41"/>
+                                <color key="backgroundColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="41" id="B5d-SH-ZRL"/>
+                                    <constraint firstAttribute="width" constant="86" id="sPK-Wa-p3l"/>
+                                    <constraint firstAttribute="width" secondItem="6Yz-Ds-7fh" secondAttribute="height" multiplier="86:41" id="zON-vV-cqC"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" weight="heavy" pointSize="24"/>
                                 <state key="normal" title="Start">
-                                    <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                     <color key="titleShadowColor" red="0.5" green="0.5" blue="0.5" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 </state>
                                 <connections>
                                     <action selector="start" destination="qMw-1i-Q0k" eventType="touchUpInside" id="WJw-vX-TFk"/>
                                 </connections>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Za5-Kh-q41">
-                                <rect key="frame" x="142" y="801" width="131" height="48"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="30"/>
-                                <state key="normal" title="View Data">
-                                    <color key="titleColor" red="0.67294770079999999" green="0.67294770079999999" blue="0.67294770079999999" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
-                                </state>
-                                <connections>
-                                    <action selector="viewData:" destination="qMw-1i-Q0k" eventType="touchUpInside" id="SBZ-a8-yNf"/>
-                                </connections>
-                            </button>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="wordWrap" translatesAutoresizingMaskIntoConstraints="NO" id="QOG-UK-aXe">
-                                <rect key="frame" x="20" y="52" width="374" height="48"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" style="UICTFontTextStyleTitle0"/>
-                                <state key="normal" title="Sleep Tracker">
-                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                    <color key="titleShadowColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                </state>
-                            </button>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="wordWrap" translatesAutoresizingMaskIntoConstraints="NO" id="hFU-v0-t7l">
-                                <rect key="frame" x="20" y="621" width="374" height="172"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="15"/>
-                                <state key="normal">
-                                    <string key="title">Welcome to Sleep Tracker. This application allows you to monitor and store your sleep data. To use the application, simply hit the "start bottom" in the bottom left corner before going to bed. When you wake up, you can stop the tracker by hitting the "stop" button in the bottom right corner. The application will save your data to the Health App, which can also be accessed by clicking the "View Data" button below. </string>
-                                    <color key="titleColor" white="1" alpha="0.59999999999999998" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                </state>
-                            </button>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="wordWrap" translatesAutoresizingMaskIntoConstraints="NO" id="p7L-VO-ZRY">
-                                <rect key="frame" x="20" y="177" width="374" height="171"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="30"/>
-                                <state key="normal">
-                                    <color key="titleColor" white="0.66666666669999997" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                </state>
-                            </button>
                         </subviews>
-                        <color key="backgroundColor" red="0.054646533679999998" green="0.17216613559999999" blue="0.40038050520000001" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                        <color key="backgroundColor" red="0.35294117650000001" green="0.82352941180000006" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                         <constraints>
-                            <constraint firstItem="dhd-bz-0qM" firstAttribute="baseline" secondItem="6Yz-Ds-7fh" secondAttribute="baseline" id="GrL-8v-25a"/>
-                            <constraint firstItem="QGF-O0-uF7" firstAttribute="top" secondItem="6Yz-Ds-7fh" secondAttribute="bottom" constant="13" id="IUq-SO-STH"/>
-                            <constraint firstAttribute="trailing" secondItem="dhd-bz-0qM" secondAttribute="trailing" constant="15" id="VM0-8U-xb3"/>
-                            <constraint firstItem="QGF-O0-uF7" firstAttribute="top" secondItem="cLj-JB-3RH" secondAttribute="bottom" constant="297" id="avR-cc-Bl9"/>
-                            <constraint firstItem="6Yz-Ds-7fh" firstAttribute="leading" secondItem="hnp-Bg-fY9" secondAttribute="leading" constant="20" symbolic="YES" id="ipP-bL-pSe"/>
-                            <constraint firstItem="cLj-JB-3RH" firstAttribute="centerX" secondItem="hnp-Bg-fY9" secondAttribute="centerX" id="kaX-PI-V0T"/>
+                            <constraint firstItem="QOG-UK-aXe" firstAttribute="leading" secondItem="Z0K-HA-OLI" secondAttribute="leading" constant="16" id="4mg-Gj-Fe0"/>
+                            <constraint firstItem="cLj-JB-3RH" firstAttribute="top" secondItem="p7L-VO-ZRY" secondAttribute="bottom" constant="8" id="5KO-jD-t6O"/>
+                            <constraint firstItem="Z0K-HA-OLI" firstAttribute="bottom" secondItem="dhd-bz-0qM" secondAttribute="bottom" constant="105" id="6Em-0W-LZj"/>
+                            <constraint firstItem="xsP-Bh-cHb" firstAttribute="leading" secondItem="Z0K-HA-OLI" secondAttribute="leading" constant="16" id="A5j-Hr-FeD"/>
+                            <constraint firstItem="QOG-UK-aXe" firstAttribute="top" secondItem="Z0K-HA-OLI" secondAttribute="top" constant="10" id="Cdk-bc-361"/>
+                            <constraint firstItem="QOG-UK-aXe" firstAttribute="centerX" secondItem="Z0K-HA-OLI" secondAttribute="centerX" id="Is9-G1-jqi"/>
+                            <constraint firstItem="dhd-bz-0qM" firstAttribute="leading" secondItem="Z0K-HA-OLI" secondAttribute="leading" constant="273" id="KLB-yW-fHC"/>
+                            <constraint firstItem="Z0K-HA-OLI" firstAttribute="trailing" secondItem="Za5-Kh-q41" secondAttribute="trailing" constant="122" id="MRu-9X-LF6"/>
+                            <constraint firstItem="cLj-JB-3RH" firstAttribute="centerX" secondItem="Z0K-HA-OLI" secondAttribute="centerX" id="N5l-mW-x8H"/>
+                            <constraint firstItem="dhd-bz-0qM" firstAttribute="leading" secondItem="Z0K-HA-OLI" secondAttribute="leading" constant="255" id="VfR-pd-i9X"/>
+                            <constraint firstItem="Z0K-HA-OLI" firstAttribute="trailing" secondItem="p7L-VO-ZRY" secondAttribute="trailing" constant="34" id="ZxR-jI-krm"/>
+                            <constraint firstItem="Z0K-HA-OLI" firstAttribute="bottom" secondItem="6Yz-Ds-7fh" secondAttribute="bottom" constant="105" id="b4r-3a-LQa"/>
+                            <constraint firstItem="Za5-Kh-q41" firstAttribute="centerX" secondItem="Z0K-HA-OLI" secondAttribute="centerX" id="crR-Jm-9eQ"/>
+                            <constraint firstItem="p7L-VO-ZRY" firstAttribute="leading" secondItem="Z0K-HA-OLI" secondAttribute="leading" constant="36" id="h97-gv-jb0"/>
+                            <constraint firstItem="p7L-VO-ZRY" firstAttribute="top" secondItem="xsP-Bh-cHb" secondAttribute="bottom" constant="8" id="hYd-Pu-k3n"/>
+                            <constraint firstItem="cLj-JB-3RH" firstAttribute="leading" secondItem="Z0K-HA-OLI" secondAttribute="leading" constant="81" id="iEu-7h-Vm3"/>
+                            <constraint firstItem="Z0K-HA-OLI" firstAttribute="trailing" secondItem="cLj-JB-3RH" secondAttribute="trailing" constant="59" id="ifp-8Z-Hoo"/>
+                            <constraint firstItem="Z0K-HA-OLI" firstAttribute="trailing" secondItem="QOG-UK-aXe" secondAttribute="trailing" constant="16" id="jF6-7z-MpU"/>
+                            <constraint firstItem="Z0K-HA-OLI" firstAttribute="bottom" secondItem="Za5-Kh-q41" secondAttribute="bottom" constant="34" id="jng-DV-fra"/>
+                            <constraint firstItem="dhd-bz-0qM" firstAttribute="leading" secondItem="6Yz-Ds-7fh" secondAttribute="trailing" constant="133" id="klg-nz-Hz8"/>
+                            <constraint firstItem="6Yz-Ds-7fh" firstAttribute="leading" secondItem="Z0K-HA-OLI" secondAttribute="leading" constant="36" id="m5p-hq-200"/>
+                            <constraint firstItem="xsP-Bh-cHb" firstAttribute="top" secondItem="QOG-UK-aXe" secondAttribute="bottom" constant="6" id="nkT-m6-ReK"/>
+                            <constraint firstItem="Z0K-HA-OLI" firstAttribute="trailing" secondItem="dhd-bz-0qM" secondAttribute="trailing" constant="34" id="rB7-cn-o50"/>
+                            <constraint firstItem="Z0K-HA-OLI" firstAttribute="trailing" secondItem="xsP-Bh-cHb" secondAttribute="trailing" constant="15" id="rrD-Mq-B7Q"/>
+                            <constraint firstItem="Z0K-HA-OLI" firstAttribute="trailing" secondItem="6Yz-Ds-7fh" secondAttribute="trailing" constant="253" id="sGD-qd-yc8"/>
+                            <constraint firstItem="xsP-Bh-cHb" firstAttribute="centerX" secondItem="Z0K-HA-OLI" secondAttribute="centerX" id="v9B-xT-J41"/>
+                            <constraint firstItem="Z0K-HA-OLI" firstAttribute="bottom" secondItem="cLj-JB-3RH" secondAttribute="bottom" constant="154" id="wcn-Hx-KT3"/>
+                            <constraint firstItem="Za5-Kh-q41" firstAttribute="leading" secondItem="Z0K-HA-OLI" secondAttribute="leading" constant="122" id="xdW-VE-LN8"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="Z0K-HA-OLI"/>
                     </view>
@@ -771,8 +805,11 @@
                         </barButtonItem>
                     </navigationItem>
                     <connections>
+                        <outlet property="descriptionLabel" destination="xsP-Bh-cHb" id="6kU-RU-u6P"/>
                         <outlet property="displayTimeLabel" destination="cLj-JB-3RH" id="zUw-fb-f3E"/>
                         <outlet property="summaryButton" destination="p7L-VO-ZRY" id="cEU-fO-IXq"/>
+                        <outlet property="titleLabel" destination="QOG-UK-aXe" id="VCY-dJ-b2S"/>
+                        <outlet property="viewDataButton" destination="Za5-Kh-q41" id="Z3m-ue-2Ol"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="BJy-aw-jF6" sceneMemberID="firstResponder"/>
