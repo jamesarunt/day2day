@@ -9,6 +9,7 @@
 /* Begin PBXBuildFile section */
 		19312F9A227D05C700361490 /* AddAssignmentViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 19312F99227D05C700361490 /* AddAssignmentViewController.swift */; };
 		1966DBF22286CECE0058207E /* RemoveAssignmentViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1966DBF12286CECE0058207E /* RemoveAssignmentViewController.swift */; };
+		198518DE228935C60092F09E /* SleepViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 198518DC228935C60092F09E /* SleepViewController.swift */; };
 		199AC3B3227CCC6C00A26CEC /* AssignmentViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 199AC3B2227CCC6C00A26CEC /* AssignmentViewController.swift */; };
 		199AC3B5227CCDC100A26CEC /* Assignment.swift in Sources */ = {isa = PBXBuildFile; fileRef = 199AC3B4227CCDC100A26CEC /* Assignment.swift */; };
 		19DFF5CF227102E600704ED1 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 19DFF5CE227102E600704ED1 /* AppDelegate.swift */; };
@@ -46,6 +47,10 @@
 /* Begin PBXFileReference section */
 		19312F99227D05C700361490 /* AddAssignmentViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddAssignmentViewController.swift; sourceTree = "<group>"; };
 		1966DBF12286CECE0058207E /* RemoveAssignmentViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RemoveAssignmentViewController.swift; sourceTree = "<group>"; };
+		198518DB228935C60092F09E /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		198518DC228935C60092F09E /* SleepViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SleepViewController.swift; sourceTree = "<group>"; };
+		198518DF228937F10092F09E /* SleepAnalysis2.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; name = SleepAnalysis2.entitlements; path = planner/SleepAnalysis2.entitlements; sourceTree = "<group>"; };
+		198518E0228939D50092F09E /* SleepAnalysis.entitlements */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.entitlements; path = SleepAnalysis.entitlements; sourceTree = "<group>"; };
 		199AC3B2227CCC6C00A26CEC /* AssignmentViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AssignmentViewController.swift; sourceTree = "<group>"; };
 		199AC3B4227CCDC100A26CEC /* Assignment.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Assignment.swift; sourceTree = "<group>"; };
 		19DFF5CB227102E600704ED1 /* planner.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = planner.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -55,7 +60,6 @@
 		19DFF5D6227102E600704ED1 /* planner.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = planner.xcdatamodel; sourceTree = "<group>"; };
 		19DFF5D8227102E700704ED1 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		19DFF5DB227102E700704ED1 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
-		19DFF5DD227102E700704ED1 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		19DFF5E2227102E700704ED1 /* plannerTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = plannerTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		19DFF5E6227102E700704ED1 /* plannerTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = plannerTests.swift; sourceTree = "<group>"; };
 		19DFF5E8227102E700704ED1 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -97,6 +101,7 @@
 		19DFF5C2227102E600704ED1 = {
 			isa = PBXGroup;
 			children = (
+				198518DF228937F10092F09E /* SleepAnalysis2.entitlements */,
 				19DFF5CD227102E600704ED1 /* planner */,
 				19DFF5E5227102E700704ED1 /* plannerTests */,
 				19DFF5F0227102E700704ED1 /* plannerUITests */,
@@ -117,6 +122,7 @@
 		19DFF5CD227102E600704ED1 /* planner */ = {
 			isa = PBXGroup;
 			children = (
+				198518E0228939D50092F09E /* SleepAnalysis.entitlements */,
 				19312F99227D05C700361490 /* AddAssignmentViewController.swift */,
 				43A9CA5D2288F71700E25F07 /* fitnessLogic.swift */,
 				43A9CA5C2288F71700E25F07 /* FitnessViewController.swift */,
@@ -126,9 +132,10 @@
 				19DFF5D0227102E600704ED1 /* ViewController.swift */,
 				19DFF5D2227102E600704ED1 /* Main.storyboard */,
 				1966DBF12286CECE0058207E /* RemoveAssignmentViewController.swift */,
+				198518DB228935C60092F09E /* Info.plist */,
+				198518DC228935C60092F09E /* SleepViewController.swift */,
 				19DFF5D8227102E700704ED1 /* Assets.xcassets */,
 				19DFF5DA227102E700704ED1 /* LaunchScreen.storyboard */,
-				19DFF5DD227102E700704ED1 /* Info.plist */,
 				19DFF5D5227102E600704ED1 /* planner.xcdatamodeld */,
 				43A9CA662288F77D00E25F07 /* arun app logo2.png */,
 				43A9CA642288F77200E25F07 /* mon.pdf */,
@@ -291,6 +298,7 @@
 			files = (
 				19DFF5D1227102E600704ED1 /* ViewController.swift in Sources */,
 				43A9CA5F2288F71700E25F07 /* FitnessViewController.swift in Sources */,
+				198518DE228935C60092F09E /* SleepViewController.swift in Sources */,
 				19312F9A227D05C700361490 /* AddAssignmentViewController.swift in Sources */,
 				199AC3B3227CCC6C00A26CEC /* AssignmentViewController.swift in Sources */,
 				19DFF5D7227102E600704ED1 /* planner.xcdatamodeld in Sources */,
@@ -474,7 +482,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 4E7G99WL25;
-				INFOPLIST_FILE = planner/Info.plist;
+				INFOPLIST_FILE = "/Users/nishant/Desktop/mergesleep/day2day/planner_app-master/planner/planner/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -492,7 +500,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 4E7G99WL25;
-				INFOPLIST_FILE = planner/Info.plist;
+				INFOPLIST_FILE = "/Users/nishant/Desktop/mergesleep/day2day/planner_app-master/planner/planner/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",

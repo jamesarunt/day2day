@@ -46,9 +46,12 @@
                                 <state key="normal" title="Sleep Tracker">
                                     <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
+                                <connections>
+                                    <segue destination="Str-3q-3UM" kind="show" id="ofw-7l-E2i"/>
+                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="tOj-Np-0yA">
-                                <rect key="frame" x="69.666666666666686" y="491.66666666666674" width="236" height="59"/>
+                                <rect key="frame" x="69.666666666666686" y="535.66666666666663" width="236" height="59"/>
                                 <color key="backgroundColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="236" id="4ZH-i7-jZG"/>
@@ -61,7 +64,7 @@
                                 </state>
                             </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Day2Day" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="7Pd-Gx-Moz">
-                                <rect key="frame" x="48" y="105" width="279" height="33.666666666666657"/>
+                                <rect key="frame" x="48" y="149" width="279" height="33.666666666666657"/>
                                 <fontDescription key="fontDescription" type="boldSystem" pointSize="28"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
@@ -91,7 +94,7 @@
                                 <nil key="highlightedColor"/>
                             </label>
                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="center" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="Fl8-6D-MJj">
-                                <rect key="frame" x="131" y="625" width="112" height="65.333333333333371"/>
+                                <rect key="frame" x="131" y="669" width="112" height="65.333333333333371"/>
                                 <subviews>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Night Mode" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="zGw-uh-gec">
                                         <rect key="frame" x="0.0" y="0.0" width="112" height="26.333333333333332"/>
@@ -307,7 +310,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="4Ml-nq-5U5" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1548" y="262.3152709359606"/>
+            <point key="canvasLocation" x="2490.4000000000001" y="262.3152709359606"/>
         </scene>
         <!--Add Assignment View Controller-->
         <scene sceneID="5xc-pR-ziG">
@@ -641,7 +644,7 @@
                     </connections>
                 </tapGestureRecognizer>
             </objects>
-            <point key="canvasLocation" x="-148" y="208.37438423645321"/>
+            <point key="canvasLocation" x="794.39999999999998" y="208.37438423645321"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="FDY-nu-n1Q">
@@ -659,13 +662,146 @@
                 </navigationController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="vrg-aC-Kzv" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-1090.4000000000001" y="208.37438423645321"/>
+            <point key="canvasLocation" x="-316" y="207.63546798029557"/>
+        </scene>
+        <!--Sleep View Controller-->
+        <scene sceneID="nrI-J1-8G8">
+            <objects>
+                <viewController id="qMw-1i-Q0k" customClass="SleepViewController" customModule="planner" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="BeZ-pY-aMI"/>
+                        <viewControllerLayoutGuide type="bottom" id="QGF-O0-uF7"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="hnp-Bg-fY9">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <subviews>
+                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="00:00:00" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="cLj-JB-3RH">
+                                <rect key="frame" x="138" y="356" width="138" height="257"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="138" id="b8Q-vE-kN5"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="27"/>
+                                <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="dhd-bz-0qM">
+                                <rect key="frame" x="314" y="735" width="46" height="30"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="46" id="JVs-FV-0IH"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" weight="heavy" pointSize="15"/>
+                                <state key="normal" title="Stop">
+                                    <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                    <color key="titleShadowColor" red="0.5" green="0.5" blue="0.5" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                </state>
+                                <connections>
+                                    <action selector="stop" destination="qMw-1i-Q0k" eventType="touchUpInside" id="CDA-Ae-WhI"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="6Yz-Ds-7fh">
+                                <rect key="frame" x="20" y="735" width="46" height="30"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="46" id="KfU-KU-vig"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" weight="heavy" pointSize="15"/>
+                                <state key="normal" title="Start">
+                                    <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                    <color key="titleShadowColor" red="0.5" green="0.5" blue="0.5" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                </state>
+                                <connections>
+                                    <action selector="start" destination="qMw-1i-Q0k" eventType="touchUpInside" id="WJw-vX-TFk"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Za5-Kh-q41">
+                                <rect key="frame" x="142" y="801" width="131" height="48"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="30"/>
+                                <state key="normal" title="View Data">
+                                    <color key="titleColor" red="0.67294770079999999" green="0.67294770079999999" blue="0.67294770079999999" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                </state>
+                                <connections>
+                                    <action selector="viewData:" destination="qMw-1i-Q0k" eventType="touchUpInside" id="SBZ-a8-yNf"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="wordWrap" translatesAutoresizingMaskIntoConstraints="NO" id="QOG-UK-aXe">
+                                <rect key="frame" x="20" y="52" width="374" height="48"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" style="UICTFontTextStyleTitle0"/>
+                                <state key="normal" title="Sleep Tracker">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                    <color key="titleShadowColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </state>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="wordWrap" translatesAutoresizingMaskIntoConstraints="NO" id="hFU-v0-t7l">
+                                <rect key="frame" x="20" y="621" width="374" height="172"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                                <state key="normal">
+                                    <string key="title">Welcome to Sleep Tracker. This application allows you to monitor and store your sleep data. To use the application, simply hit the "start bottom" in the bottom left corner before going to bed. When you wake up, you can stop the tracker by hitting the "stop" button in the bottom right corner. The application will save your data to the Health App, which can also be accessed by clicking the "View Data" button below. </string>
+                                    <color key="titleColor" white="1" alpha="0.59999999999999998" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </state>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="wordWrap" translatesAutoresizingMaskIntoConstraints="NO" id="p7L-VO-ZRY">
+                                <rect key="frame" x="20" y="177" width="374" height="171"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="30"/>
+                                <state key="normal">
+                                    <color key="titleColor" white="0.66666666669999997" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </state>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" red="0.054646533679999998" green="0.17216613559999999" blue="0.40038050520000001" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                        <constraints>
+                            <constraint firstItem="dhd-bz-0qM" firstAttribute="baseline" secondItem="6Yz-Ds-7fh" secondAttribute="baseline" id="GrL-8v-25a"/>
+                            <constraint firstItem="QGF-O0-uF7" firstAttribute="top" secondItem="6Yz-Ds-7fh" secondAttribute="bottom" constant="13" id="IUq-SO-STH"/>
+                            <constraint firstAttribute="trailing" secondItem="dhd-bz-0qM" secondAttribute="trailing" constant="15" id="VM0-8U-xb3"/>
+                            <constraint firstItem="QGF-O0-uF7" firstAttribute="top" secondItem="cLj-JB-3RH" secondAttribute="bottom" constant="297" id="avR-cc-Bl9"/>
+                            <constraint firstItem="6Yz-Ds-7fh" firstAttribute="leading" secondItem="hnp-Bg-fY9" secondAttribute="leading" constant="20" symbolic="YES" id="ipP-bL-pSe"/>
+                            <constraint firstItem="cLj-JB-3RH" firstAttribute="centerX" secondItem="hnp-Bg-fY9" secondAttribute="centerX" id="kaX-PI-V0T"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="Z0K-HA-OLI"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="i9D-u5-uOk">
+                        <barButtonItem key="leftBarButtonItem" title="Home" id="IUo-mU-YJH">
+                            <connections>
+                                <segue destination="BYZ-38-t0r" kind="show" id="3mY-pd-Y7o"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
+                    <connections>
+                        <outlet property="displayTimeLabel" destination="cLj-JB-3RH" id="zUw-fb-f3E"/>
+                        <outlet property="summaryButton" destination="p7L-VO-ZRY" id="cEU-fO-IXq"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="BJy-aw-jF6" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-1496.8" y="207.63546798029557"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="4yA-LR-uAd">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="Str-3q-3UM" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="47M-fU-K4g">
+                        <rect key="frame" x="0.0" y="44" width="375" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="qMw-1i-Q0k" kind="relationship" relationship="rootViewController" id="Mk0-1T-xot"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="os2-e2-vfu" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-2439.1999999999998" y="207.63546798029557"/>
         </scene>
     </scenes>
     <resources>
         <image name="arun app logo2.png" width="3802" height="3858"/>
     </resources>
     <inferredMetricsTieBreakers>
-        <segue reference="Sqn-E1-Tua"/>
+        <segue reference="3mY-pd-Y7o"/>
     </inferredMetricsTieBreakers>
 </document>

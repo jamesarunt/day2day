@@ -1,10 +1,5 @@
-//
 //  FitnessViewController.swift
-//  fitnessTracker
-//
-//  Created by Arun James on 5/11/19.
 //  Copyright © 2019 Arun James. All rights reserved.
-//
 
 import UIKit
 import WebKit
