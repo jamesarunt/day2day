@@ -8,4 +8,6 @@ class Assignment {
     var name = ""
     var important = false
     var dueDate = ""
+    var dateTime = Date()
+    var dateAdded = Date()
 }

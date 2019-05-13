@@ -6,7 +6,7 @@ import UIKit
 class AssignmentViewController: UITableViewController {
     var assignments: [AssignmentCoreData] = []
     var nightModeStatus = UserDefaults.standard.bool(forKey: "nightModeOn")
-
+    
     override func viewDidLoad() {
         if nightModeStatus {
             self.tableView.backgroundColor = UIColor .black
@@ -24,6 +24,36 @@ class AssignmentViewController: UITableViewController {
         return assignments.count
     }
 
+    func sortByDate() {
+        assignments = assignments.sorted { $0.dateTime! < $1.dateTime! }
+        self.tableView.reloadData()
+    }
+    
+    func sortByName() {
+        assignments = assignments.sorted { $0.name! < $1.name! }
+        self.tableView.reloadData()
+    }
+    
+    func sortByDateAdded() {
+        assignments = assignments.sorted { $0.dateAdded! < $1.dateAdded! }
+        self.tableView.reloadData()
+    }
+    
+    @IBAction func sortButtonTapped(_ sender: Any) {
+        let alert = UIAlertController(title: "Sort By:", message: "Select a category.", preferredStyle: UIAlertController.Style.alert)
+        
+        alert.addAction(UIAlertAction(title: "Name (A-Z)", style: UIAlertAction.Style.default, handler: { action in
+            self.sortByName()
+        }))
+        alert.addAction(UIAlertAction(title: "Due Date", style: UIAlertAction.Style.default, handler:  { action in
+            self.sortByDate()
+        }))
+        alert.addAction(UIAlertAction(title: "Date Added", style: UIAlertAction.Style.default, handler:  { action in
+            self.sortByDateAdded()
+        }))
+        
+        self.present(alert, animated: true, completion: nil)
+    }
     override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCell(withIdentifier: "reuseIdentifier", for: indexPath)
         let assignment = assignments[indexPath.row]

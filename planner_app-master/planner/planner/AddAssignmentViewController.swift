@@ -20,29 +20,31 @@ class AddAssignmentViewController: UIViewController {
         if nightModeStatus {
             assignmentLabel.textColor = UIColor .white
             importantLabel.textColor = UIColor .white
+            datePicker.setValue(UIColor .white, forKeyPath: "textColor")
             self.view.backgroundColor = UIColor .black
             
         } else {
             assignmentLabel.textColor = UIColor .black
             importantLabel.textColor = UIColor .black
+            datePicker.setValue(UIColor .black, forKeyPath: "textColor")
             self.view.backgroundColor = UIColor(red: 90/255, green: 210/255, blue: 255/255, alpha: 1)
         }
         super.viewDidLoad()
     }
     
     @IBAction func addButtonWasTapped(_ sender: Any) {
-        addAssignment()
+        if assignmentNameField.text == "" {
+            let alert = UIAlertController(title: "Invalid Name", message: "The name field cannot be left blank.", preferredStyle: UIAlertController.Style.alert)
+            alert.addAction(UIAlertAction(title: "OK", style: UIAlertAction.Style.default, handler: nil))
+            self.present(alert, animated: true, completion: nil)
+        } else {
+            addAssignment()
+        }
     }
     
     func addAssignment() {
         if let context = (UIApplication.shared.delegate as? AppDelegate)?.persistentContainer.viewContext {
             let assignment = AssignmentCoreData.init(entity: AssignmentCoreData.entity(), insertInto: context)
-            
-            if assignmentNameField.text == "" {
-                let alert = UIAlertController(title: "Invalid Name", message: "The name field cannot be left blank.", preferredStyle: UIAlertController.Style.alert)
-                alert.addAction(UIAlertAction(title: "OK", style: UIAlertAction.Style.default, handler: nil))
-                self.present(alert, animated: true, completion: nil)
-            }
             
             if let name = assignmentNameField.text {
                 assignment.name = name
@@ -50,6 +52,8 @@ class AddAssignmentViewController: UIViewController {
                 let dateFormatter = DateFormatter()
                 dateFormatter.dateFormat = "MM/dd/yy h:mm a"
                 assignment.dueDate = dateFormatter.string(from: datePicker.date)
+                assignment.dateTime = datePicker.date
+                assignment.dateAdded = Date()
             }
             
             try? context.save()

@@ -23,6 +23,8 @@ class FitnessViewController: UIViewController {
     @IBOutlet weak var Water: UIButton!
     @IBOutlet weak var Ring: UIButton!
     
+    var nightModeStatus = UserDefaults.standard.bool(forKey: "nightModeOn")
+
     // Define the UIButton
     
     let button   = UIButton(type: UIButton.ButtonType.system) as UIButton
@@ -40,20 +42,21 @@ class FitnessViewController: UIViewController {
         }    }
     
     override func viewDidLoad() {
-        super.viewDidLoad()
-        // Do any additional setup after loading the view.
-        
+
+        if nightModeStatus {
+            self.view.backgroundColor = UIColor .black
+        } else {
+            self.view.backgroundColor = UIColor .white
+        }
         for button in self.allButtons {
             button.layer.cornerRadius = 10.0
         }
         
         setButtonColor()
         
-        //pdf close button
+        super.viewDidLoad()
 
-        
-    
-    
+        //pdf close button
     }
     
     func setButtonColor(){
@@ -68,6 +71,5 @@ class FitnessViewController: UIViewController {
         Water.backgroundColor = UIColor(red:0.38, green:0.75, blue:0.98, alpha:1.00)
         Ring.backgroundColor = UIColor(red: 0.8275, green: 0.8275, blue: 0.8118, alpha: 1.0)
     }
-
 }
 

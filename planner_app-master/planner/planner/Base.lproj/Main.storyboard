@@ -1,11 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14490.70" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14460.31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
     <device id="retina5_9" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
     <dependencies>
         <deployment identifier="iOS"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14490.49"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14460.20"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
@@ -48,7 +48,7 @@
                                 </state>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="tOj-Np-0yA">
-                                <rect key="frame" x="69.666666666666686" y="535.66666666666663" width="236" height="59"/>
+                                <rect key="frame" x="69.666666666666686" y="491.66666666666674" width="236" height="59"/>
                                 <color key="backgroundColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="236" id="4ZH-i7-jZG"/>
@@ -61,7 +61,7 @@
                                 </state>
                             </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Day2Day" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="7Pd-Gx-Moz">
-                                <rect key="frame" x="48" y="149" width="279" height="33.666666666666657"/>
+                                <rect key="frame" x="48" y="105" width="279" height="33.666666666666657"/>
                                 <fontDescription key="fontDescription" type="boldSystem" pointSize="28"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
@@ -91,7 +91,7 @@
                                 <nil key="highlightedColor"/>
                             </label>
                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="center" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="Fl8-6D-MJj">
-                                <rect key="frame" x="131" y="669" width="112" height="65.333333333333371"/>
+                                <rect key="frame" x="131" y="625" width="112" height="65.333333333333371"/>
                                 <subviews>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Night Mode" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="zGw-uh-gec">
                                         <rect key="frame" x="0.0" y="0.0" width="112" height="26.333333333333332"/>
@@ -132,6 +132,7 @@
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
+                    <navigationItem key="navigationItem" id="72Y-lk-eZq"/>
                     <connections>
                         <outlet property="assignmentButton" destination="QAq-aF-UCx" id="Prt-Tg-rbU"/>
                         <outlet property="calendarButton" destination="tOj-Np-0yA" id="MGe-TF-l8m"/>
@@ -177,11 +178,18 @@
                                 <segue destination="BYZ-38-t0r" kind="modal" id="Sqn-E1-Tua"/>
                             </connections>
                         </barButtonItem>
-                        <barButtonItem key="rightBarButtonItem" systemItem="add" id="ZfV-yH-Mg6">
-                            <connections>
-                                <segue destination="uRq-e2-g5j" kind="show" id="DCh-kh-NMJ"/>
-                            </connections>
-                        </barButtonItem>
+                        <rightBarButtonItems>
+                            <barButtonItem systemItem="add" id="ZfV-yH-Mg6">
+                                <connections>
+                                    <segue destination="uRq-e2-g5j" kind="show" id="DCh-kh-NMJ"/>
+                                </connections>
+                            </barButtonItem>
+                            <barButtonItem title="Sort" id="JsA-cH-avC">
+                                <connections>
+                                    <action selector="sortButtonTapped:" destination="PJK-8r-1Jt" id="X52-6v-0Qo"/>
+                                </connections>
+                            </barButtonItem>
+                        </rightBarButtonItems>
                     </navigationItem>
                     <connections>
                         <segue destination="4D8-CP-KJN" kind="show" identifier="goToRemove" id="kJk-3o-ige"/>
@@ -423,12 +431,12 @@
         <!--Today-->
         <scene sceneID="CVc-G2-vpN">
             <objects>
-                <viewController id="hfo-x7-kva" customClass="FitnessViewController" customModule="fitnessTracker" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="hfo-x7-kva" customClass="FitnessViewController" customModule="planner" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="top" id="3OY-li-J5F">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="bIs-9K-pf6" customClass="ThemeView" customModule="fitnessTracker" customModuleProvider="target">
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="bIs-9K-pf6" customClass="ThemeView" customModule="planner" customModuleProvider="target">
                                 <rect key="frame" x="0.0" y="88" width="375" height="690"/>
                                 <subviews>
                                     <imageView contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" image="arun app logo2.png" translatesAutoresizingMaskIntoConstraints="NO" id="2aX-zn-vXg">
@@ -599,7 +607,7 @@
                     <navigationItem key="navigationItem" title="Today" id="uvF-fV-Tff">
                         <barButtonItem key="leftBarButtonItem" title="Home" id="tfk-Sz-fa3">
                             <connections>
-                                <segue destination="BYZ-38-t0r" kind="show" id="WFa-Du-Wnx"/>
+                                <segue destination="BYZ-38-t0r" kind="push" id="MAC-j1-Cvu"/>
                             </connections>
                         </barButtonItem>
                     </navigationItem>
@@ -655,9 +663,9 @@
         </scene>
     </scenes>
     <resources>
-        <image name="arun app logo2.png" width="912.47998046875" height="925.91998291015625"/>
+        <image name="arun app logo2.png" width="3802" height="3858"/>
     </resources>
     <inferredMetricsTieBreakers>
-        <segue reference="WFa-Du-Wnx"/>
+        <segue reference="Sqn-E1-Tua"/>
     </inferredMetricsTieBreakers>
 </document>

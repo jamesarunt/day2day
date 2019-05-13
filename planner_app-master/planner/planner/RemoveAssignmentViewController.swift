@@ -36,7 +36,6 @@ class RemoveAssignmentViewController: UIViewController {
         assignmentDueDateLabel.text = selectedAssignment?.dueDate!
         super.viewDidLoad()
     }
-    
    
     
     @IBAction func removeAssignmentButtonTapped(_ sender: Any) {
