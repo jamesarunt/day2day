@@ -1,0 +1,5 @@
+# for mac's
+.DS_Store
+
+# for userdata
+xcuserdata
