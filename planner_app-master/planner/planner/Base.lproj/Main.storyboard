@@ -1,11 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14460.31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14490.70" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
     <device id="retina5_9" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
     <dependencies>
         <deployment identifier="iOS"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14460.20"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14490.49"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
@@ -443,7 +443,7 @@
                                 <rect key="frame" x="0.0" y="88" width="375" height="690"/>
                                 <subviews>
                                     <imageView contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" image="arun app logo2.png" translatesAutoresizingMaskIntoConstraints="NO" id="2aX-zn-vXg">
-                                        <rect key="frame" x="0.0" y="23" width="414" height="250.5"/>
+                                        <rect key="frame" x="-18" y="15" width="414" height="250.5"/>
                                         <accessibility key="accessibilityConfiguration" label="Today's Points">
                                             <bool key="isElement" value="YES"/>
                                         </accessibility>
@@ -573,27 +573,104 @@
                                             </stackView>
                                         </subviews>
                                     </stackView>
-                                    <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="JWY-Ag-9aU">
-                                        <rect key="frame" x="30" y="66" width="31" height="30"/>
+                                    <stackView opaque="NO" contentMode="scaleToFill" ambiguous="YES" axis="vertical" spacing="37" translatesAutoresizingMaskIntoConstraints="NO" id="Dce-xw-PUl">
+                                        <rect key="frame" x="14" y="65" width="31" height="164"/>
+                                        <subviews>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="JWY-Ag-9aU">
+                                                <rect key="frame" x="0.0" y="0.0" width="31" height="30"/>
+                                                <color key="backgroundColor" white="0.66666666669999997" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                <state key="normal" title="Mon"/>
+                                                <connections>
+                                                    <action selector="MonWorkout:" destination="hfo-x7-kva" eventType="touchUpInside" id="ug2-xA-4wA"/>
+                                                </connections>
+                                            </button>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="rPe-d1-e72">
+                                                <rect key="frame" x="0.0" y="67" width="31" height="30"/>
+                                                <color key="backgroundColor" white="0.66666666669999997" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                <state key="normal" title="Tue"/>
+                                                <connections>
+                                                    <action selector="TueWorkout:" destination="hfo-x7-kva" eventType="touchUpInside" id="xZa-3b-0Fg"/>
+                                                </connections>
+                                            </button>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="oiw-Bj-oeR">
+                                                <rect key="frame" x="0.0" y="134" width="31" height="30"/>
+                                                <color key="backgroundColor" white="0.66666666669999997" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                <state key="normal" title="Wed"/>
+                                                <connections>
+                                                    <action selector="WedWorkout:" destination="hfo-x7-kva" eventType="touchUpInside" id="9Xf-6q-2je"/>
+                                                </connections>
+                                            </button>
+                                        </subviews>
+                                    </stackView>
+                                    <stackView opaque="NO" contentMode="scaleToFill" ambiguous="YES" axis="vertical" spacing="37" translatesAutoresizingMaskIntoConstraints="NO" id="oc7-bN-CID">
+                                        <rect key="frame" x="330" y="65" width="32" height="164"/>
+                                        <subviews>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="7hw-gH-0vu">
+                                                <rect key="frame" x="0.0" y="0.0" width="32" height="30"/>
+                                                <color key="backgroundColor" white="0.66666666669999997" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                <state key="normal" title="Thur"/>
+                                                <connections>
+                                                    <action selector="ThurWorkout:" destination="hfo-x7-kva" eventType="touchUpInside" id="sQA-op-baE"/>
+                                                </connections>
+                                            </button>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="1MC-8b-A9P">
+                                                <rect key="frame" x="0.0" y="67" width="32" height="30"/>
+                                                <color key="backgroundColor" white="0.66666666669999997" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                <state key="normal" title="Fri"/>
+                                                <connections>
+                                                    <action selector="FriWorkout:" destination="hfo-x7-kva" eventType="touchUpInside" id="hxZ-zn-iAh"/>
+                                                </connections>
+                                            </button>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="laa-uu-eKu">
+                                                <rect key="frame" x="0.0" y="134" width="32" height="30"/>
+                                                <color key="backgroundColor" white="0.66666666669999997" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                <state key="normal" title="Sat"/>
+                                                <connections>
+                                                    <action selector="SatWorkout:" destination="hfo-x7-kva" eventType="touchUpInside" id="vGL-7y-poI"/>
+                                                </connections>
+                                            </button>
+                                        </subviews>
+                                    </stackView>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="." textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Thl-SS-QPF">
+                                        <rect key="frame" x="168" y="99" width="42" height="21"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                        <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Fitness Tracker" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="KV4-oW-HzJ">
+                                        <rect key="frame" x="131" y="265" width="117" height="21"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                        <color key="backgroundColor" white="0.66666666669999997" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                        <state key="normal" title="Mon"/>
-                                        <connections>
-                                            <action selector="MonWorkout:" destination="hfo-x7-kva" eventType="touchUpInside" id="ug2-xA-4wA"/>
-                                        </connections>
-                                    </button>
+                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Workouts" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="h7f-wp-SBO">
+                                        <rect key="frame" x="151" y="-1" width="73" height="21"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
                                 </subviews>
                                 <color key="backgroundColor" red="1" green="1" blue="1" alpha="0.0" colorSpace="custom" customColorSpace="displayP3"/>
                                 <constraints>
                                     <constraint firstItem="mRL-FZ-0ry" firstAttribute="top" secondItem="2aX-zn-vXg" secondAttribute="bottom" constant="28" id="AZJ-pk-8F5"/>
                                     <constraint firstItem="mRL-FZ-0ry" firstAttribute="centerX" secondItem="bIs-9K-pf6" secondAttribute="centerX" id="IsL-Ln-HNc"/>
+                                    <constraint firstAttribute="trailing" relation="greaterThanOrEqual" secondItem="oc7-bN-CID" secondAttribute="trailing" constant="14" id="JKt-Ng-rX1"/>
                                     <constraint firstAttribute="trailing" relation="lessThanOrEqual" secondItem="mRL-FZ-0ry" secondAttribute="trailing" constant="5" id="LiD-St-4Yb"/>
                                     <constraint firstAttribute="bottom" secondItem="mRL-FZ-0ry" secondAttribute="bottom" constant="5" id="NIm-Jy-K3Q"/>
+                                    <constraint firstItem="Thl-SS-QPF" firstAttribute="centerX" secondItem="bIs-9K-pf6" secondAttribute="centerX" id="ObO-Cj-K47"/>
+                                    <constraint firstItem="oc7-bN-CID" firstAttribute="top" secondItem="bIs-9K-pf6" secondAttribute="top" constant="65" id="UIK-zF-q3k"/>
                                     <constraint firstItem="2aX-zn-vXg" firstAttribute="height" secondItem="bIs-9K-pf6" secondAttribute="height" multiplier="0.333" id="auM-8r-qaw"/>
                                     <constraint firstItem="2aX-zn-vXg" firstAttribute="top" secondItem="bIs-9K-pf6" secondAttribute="top" constant="30" id="bTb-ac-eqc"/>
                                     <constraint firstAttribute="trailing" secondItem="2aX-zn-vXg" secondAttribute="trailing" id="dtb-Nh-Xff"/>
+                                    <constraint firstItem="Dce-xw-PUl" firstAttribute="leading" relation="greaterThanOrEqual" secondItem="bIs-9K-pf6" secondAttribute="leading" constant="14" id="lsj-gu-IZO"/>
+                                    <constraint firstItem="Thl-SS-QPF" firstAttribute="centerY" secondItem="2aX-zn-vXg" secondAttribute="centerY" id="mJe-Ln-Vad"/>
                                     <constraint firstItem="mRL-FZ-0ry" firstAttribute="leading" relation="lessThanOrEqual" secondItem="bIs-9K-pf6" secondAttribute="leading" constant="5" id="nHK-mS-T15"/>
+                                    <constraint firstItem="oc7-bN-CID" firstAttribute="leading" relation="lessThanOrEqual" secondItem="Thl-SS-QPF" secondAttribute="trailing" constant="150" id="qQf-RZ-tmM"/>
+                                    <constraint firstItem="Dce-xw-PUl" firstAttribute="top" secondItem="bIs-9K-pf6" secondAttribute="top" constant="65" id="rpZ-hw-2o9"/>
                                     <constraint firstItem="2aX-zn-vXg" firstAttribute="leading" secondItem="bIs-9K-pf6" secondAttribute="leading" id="vVW-nE-8cJ"/>
+                                    <constraint firstItem="Thl-SS-QPF" firstAttribute="leading" relation="lessThanOrEqual" secondItem="Dce-xw-PUl" secondAttribute="trailing" constant="150" id="xKZ-mk-lDh"/>
                                 </constraints>
                             </view>
                         </subviews>
@@ -836,9 +913,9 @@
         </scene>
     </scenes>
     <resources>
-        <image name="arun app logo2.png" width="3802" height="3858"/>
+        <image name="arun app logo2.png" width="912.47998046875" height="925.91998291015625"/>
     </resources>
     <inferredMetricsTieBreakers>
-        <segue reference="3mY-pd-Y7o"/>
+        <segue reference="MAC-j1-Cvu"/>
     </inferredMetricsTieBreakers>
 </document>

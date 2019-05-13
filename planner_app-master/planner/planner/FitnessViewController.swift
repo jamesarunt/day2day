@@ -26,18 +26,8 @@ class FitnessViewController: UIViewController {
     let image = UIImage(named: "name") as UIImage?
 
     
-    @IBAction func MonWorkout(_ sender: Any) {
-        let url = Bundle.main.url(forResource: "mon", withExtension: "pdf")
-        
-        if let url = url {
-            let webView = WKWebView(frame: view.frame)
-            let urlRequest = URLRequest(url: url)
-            webView.load(urlRequest)
-            view.addSubview(webView)
-        }    }
-    
     override func viewDidLoad() {
-
+        
         if nightModeStatus {
             self.view.backgroundColor = UIColor .black
         } else {
@@ -50,7 +40,7 @@ class FitnessViewController: UIViewController {
         setButtonColor()
         
         super.viewDidLoad()
-
+        
         //pdf close button
     }
     
@@ -66,5 +56,71 @@ class FitnessViewController: UIViewController {
         Water.backgroundColor = UIColor(red:0.38, green:0.75, blue:0.98, alpha:1.00)
         Ring.backgroundColor = UIColor(red: 0.8275, green: 0.8275, blue: 0.8118, alpha: 1.0)
     }
+    
+    @IBAction func MonWorkout(_ sender: Any) {
+        let url = Bundle.main.url(forResource: "mon", withExtension: "pdf")
+        
+        if let url = url {
+            let webView = WKWebView(frame: view.frame)
+            let urlRequest = URLRequest(url: url)
+            webView.load(urlRequest)
+            view.addSubview(webView)
+        }    }
+    
+    @IBAction func TueWorkout(_ sender: Any) {
+        let url = Bundle.main.url(forResource: "tue", withExtension: "pdf")
+        
+        if let url = url {
+            let webView = WKWebView(frame: view.frame)
+            let urlRequest = URLRequest(url: url)
+            webView.load(urlRequest)
+            view.addSubview(webView)
+        }
+    }
+    
+    @IBAction func WedWorkout(_ sender: Any) {
+        let url = Bundle.main.url(forResource: "wed", withExtension: "pdf")
+        
+        if let url = url {
+            let webView = WKWebView(frame: view.frame)
+            let urlRequest = URLRequest(url: url)
+            webView.load(urlRequest)
+            view.addSubview(webView)
+        }
+    }
+    
+    @IBAction func ThurWorkout(_ sender: Any) {
+        let url = Bundle.main.url(forResource: "thur", withExtension: "pdf")
+        
+        if let url = url {
+            let webView = WKWebView(frame: view.frame)
+            let urlRequest = URLRequest(url: url)
+            webView.load(urlRequest)
+            view.addSubview(webView)
+        }
+    }
+    
+    @IBAction func FriWorkout(_ sender: Any) {
+        let url = Bundle.main.url(forResource: "fri", withExtension: "pdf")
+        
+        if let url = url {
+            let webView = WKWebView(frame: view.frame)
+            let urlRequest = URLRequest(url: url)
+            webView.load(urlRequest)
+            view.addSubview(webView)
+        }
+    }
+    
+    @IBAction func SatWorkout(_ sender: Any) {
+        let url = Bundle.main.url(forResource: "sat", withExtension: "pdf")
+        
+        if let url = url {
+            let webView = WKWebView(frame: view.frame)
+            let urlRequest = URLRequest(url: url)
+            webView.load(urlRequest)
+            view.addSubview(webView)
+        }
+    }
+    
 }
 
