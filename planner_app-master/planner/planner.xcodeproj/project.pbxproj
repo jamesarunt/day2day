@@ -14,7 +14,7 @@
 		199AC3B3227CCC6C00A26CEC /* AssignmentViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 199AC3B2227CCC6C00A26CEC /* AssignmentViewController.swift */; };
 		199AC3B5227CCDC100A26CEC /* Assignment.swift in Sources */ = {isa = PBXBuildFile; fileRef = 199AC3B4227CCDC100A26CEC /* Assignment.swift */; };
 		19DFF5CF227102E600704ED1 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 19DFF5CE227102E600704ED1 /* AppDelegate.swift */; };
-		19DFF5D1227102E600704ED1 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 19DFF5D0227102E600704ED1 /* ViewController.swift */; };
+		19DFF5D1227102E600704ED1 /* MainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 19DFF5D0227102E600704ED1 /* MainViewController.swift */; };
 		19DFF5D4227102E600704ED1 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 19DFF5D2227102E600704ED1 /* Main.storyboard */; };
 		19DFF5D7227102E600704ED1 /* planner.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 19DFF5D5227102E600704ED1 /* planner.xcdatamodeld */; };
 		19DFF5D9227102E700704ED1 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 19DFF5D8227102E700704ED1 /* Assets.xcassets */; };
@@ -23,9 +23,15 @@
 		19DFF5F2227102E700704ED1 /* plannerUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 19DFF5F1227102E700704ED1 /* plannerUITests.swift */; };
 		43A9CA5F2288F71700E25F07 /* FitnessViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 43A9CA5C2288F71700E25F07 /* FitnessViewController.swift */; };
 		43A9CA602288F71700E25F07 /* fitnessLogic.swift in Sources */ = {isa = PBXBuildFile; fileRef = 43A9CA5D2288F71700E25F07 /* fitnessLogic.swift */; };
-		43A9CA632288F76A00E25F07 /* Workout in Resources */ = {isa = PBXBuildFile; fileRef = 43A9CA622288F76A00E25F07 /* Workout */; };
 		43A9CA652288F77200E25F07 /* mon.pdf in Resources */ = {isa = PBXBuildFile; fileRef = 43A9CA642288F77200E25F07 /* mon.pdf */; };
 		43A9CA672288F77D00E25F07 /* arun app logo2.png in Resources */ = {isa = PBXBuildFile; fileRef = 43A9CA662288F77D00E25F07 /* arun app logo2.png */; };
+		43A9CA772289BBD100E25F07 /* thur.pdf in Resources */ = {isa = PBXBuildFile; fileRef = 43A9CA722289BBD100E25F07 /* thur.pdf */; };
+		43A9CA782289BBD100E25F07 /* sat.pdf in Resources */ = {isa = PBXBuildFile; fileRef = 43A9CA732289BBD100E25F07 /* sat.pdf */; };
+		43A9CA792289BBD100E25F07 /* wed.pdf in Resources */ = {isa = PBXBuildFile; fileRef = 43A9CA742289BBD100E25F07 /* wed.pdf */; };
+		43A9CA7A2289BBD100E25F07 /* tue.pdf in Resources */ = {isa = PBXBuildFile; fileRef = 43A9CA752289BBD100E25F07 /* tue.pdf */; };
+		43A9CA7B2289BBD100E25F07 /* fri.pdf in Resources */ = {isa = PBXBuildFile; fileRef = 43A9CA762289BBD100E25F07 /* fri.pdf */; };
+		43A9CA7F228A4F2D00E25F07 /* sad.png in Resources */ = {isa = PBXBuildFile; fileRef = 43A9CA7E228A4F2D00E25F07 /* sad.png */; };
+		43A9CA81228A500200E25F07 /* happy.png in Resources */ = {isa = PBXBuildFile; fileRef = 43A9CA80228A500200E25F07 /* happy.png */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -58,7 +64,7 @@
 		199AC3B4227CCDC100A26CEC /* Assignment.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Assignment.swift; sourceTree = "<group>"; };
 		19DFF5CB227102E600704ED1 /* planner.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = planner.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		19DFF5CE227102E600704ED1 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		19DFF5D0227102E600704ED1 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		19DFF5D0227102E600704ED1 /* MainViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainViewController.swift; sourceTree = "<group>"; };
 		19DFF5D3227102E600704ED1 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		19DFF5D6227102E600704ED1 /* planner.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = planner.xcdatamodel; sourceTree = "<group>"; };
 		19DFF5D8227102E700704ED1 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -71,9 +77,15 @@
 		19DFF5F3227102E700704ED1 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		43A9CA5C2288F71700E25F07 /* FitnessViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FitnessViewController.swift; sourceTree = "<group>"; };
 		43A9CA5D2288F71700E25F07 /* fitnessLogic.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = fitnessLogic.swift; sourceTree = "<group>"; };
-		43A9CA622288F76A00E25F07 /* Workout */ = {isa = PBXFileReference; lastKnownFileType = folder; path = Workout; sourceTree = "<group>"; };
 		43A9CA642288F77200E25F07 /* mon.pdf */ = {isa = PBXFileReference; lastKnownFileType = image.pdf; path = mon.pdf; sourceTree = "<group>"; };
 		43A9CA662288F77D00E25F07 /* arun app logo2.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "arun app logo2.png"; sourceTree = "<group>"; };
+		43A9CA722289BBD100E25F07 /* thur.pdf */ = {isa = PBXFileReference; lastKnownFileType = image.pdf; path = thur.pdf; sourceTree = "<group>"; };
+		43A9CA732289BBD100E25F07 /* sat.pdf */ = {isa = PBXFileReference; lastKnownFileType = image.pdf; path = sat.pdf; sourceTree = "<group>"; };
+		43A9CA742289BBD100E25F07 /* wed.pdf */ = {isa = PBXFileReference; lastKnownFileType = image.pdf; path = wed.pdf; sourceTree = "<group>"; };
+		43A9CA752289BBD100E25F07 /* tue.pdf */ = {isa = PBXFileReference; lastKnownFileType = image.pdf; path = tue.pdf; sourceTree = "<group>"; };
+		43A9CA762289BBD100E25F07 /* fri.pdf */ = {isa = PBXFileReference; lastKnownFileType = image.pdf; path = fri.pdf; sourceTree = "<group>"; };
+		43A9CA7E228A4F2D00E25F07 /* sad.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = sad.png; sourceTree = "<group>"; };
+		43A9CA80228A500200E25F07 /* happy.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = happy.png; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -143,17 +155,23 @@
 				199AC3B2227CCC6C00A26CEC /* AssignmentViewController.swift */,
 				199AC3B4227CCDC100A26CEC /* Assignment.swift */,
 				19DFF5CE227102E600704ED1 /* AppDelegate.swift */,
-				19DFF5D0227102E600704ED1 /* ViewController.swift */,
+				19DFF5D0227102E600704ED1 /* MainViewController.swift */,
 				19DFF5D2227102E600704ED1 /* Main.storyboard */,
 				1966DBF12286CECE0058207E /* RemoveAssignmentViewController.swift */,
 				198518DB228935C60092F09E /* Info.plist */,
 				198518DC228935C60092F09E /* SleepViewController.swift */,
+				43A9CA7E228A4F2D00E25F07 /* sad.png */,
+				43A9CA80228A500200E25F07 /* happy.png */,
 				19DFF5D8227102E700704ED1 /* Assets.xcassets */,
 				19DFF5DA227102E700704ED1 /* LaunchScreen.storyboard */,
 				19DFF5D5227102E600704ED1 /* planner.xcdatamodeld */,
 				43A9CA662288F77D00E25F07 /* arun app logo2.png */,
 				43A9CA642288F77200E25F07 /* mon.pdf */,
-				43A9CA622288F76A00E25F07 /* Workout */,
+				43A9CA752289BBD100E25F07 /* tue.pdf */,
+				43A9CA742289BBD100E25F07 /* wed.pdf */,
+				43A9CA722289BBD100E25F07 /* thur.pdf */,
+				43A9CA762289BBD100E25F07 /* fri.pdf */,
+				43A9CA732289BBD100E25F07 /* sat.pdf */,
 			);
 			path = planner;
 			sourceTree = "<group>";
@@ -287,10 +305,16 @@
 			files = (
 				19DFF5DC227102E700704ED1 /* LaunchScreen.storyboard in Resources */,
 				43A9CA672288F77D00E25F07 /* arun app logo2.png in Resources */,
+				43A9CA772289BBD100E25F07 /* thur.pdf in Resources */,
 				19DFF5D9227102E700704ED1 /* Assets.xcassets in Resources */,
-				43A9CA632288F76A00E25F07 /* Workout in Resources */,
+				43A9CA81228A500200E25F07 /* happy.png in Resources */,
+				43A9CA782289BBD100E25F07 /* sat.pdf in Resources */,
+				43A9CA7B2289BBD100E25F07 /* fri.pdf in Resources */,
+				43A9CA7A2289BBD100E25F07 /* tue.pdf in Resources */,
+				43A9CA7F228A4F2D00E25F07 /* sad.png in Resources */,
 				19DFF5D4227102E600704ED1 /* Main.storyboard in Resources */,
 				43A9CA652288F77200E25F07 /* mon.pdf in Resources */,
+				43A9CA792289BBD100E25F07 /* wed.pdf in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -315,7 +339,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				19DFF5D1227102E600704ED1 /* ViewController.swift in Sources */,
+				19DFF5D1227102E600704ED1 /* MainViewController.swift in Sources */,
 				43A9CA5F2288F71700E25F07 /* FitnessViewController.swift in Sources */,
 				198518DE228935C60092F09E /* SleepViewController.swift in Sources */,
 				19312F9A227D05C700361490 /* AddAssignmentViewController.swift in Sources */,

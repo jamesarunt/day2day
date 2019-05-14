@@ -15,6 +15,7 @@ class MainViewController: UIViewController {
 
     @IBOutlet weak var nightModeSwitch: UISwitch!
     
+    
     override func viewDidLoad() {
         assignmentButton.layer.cornerRadius = 10
         fitnessButton.layer.cornerRadius = 10

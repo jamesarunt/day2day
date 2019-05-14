@@ -431,7 +431,7 @@
             </objects>
             <point key="canvasLocation" x="-335.19999999999999" y="-498.02955665024632"/>
         </scene>
-        <!--Today-->
+        <!--Fitness-->
         <scene sceneID="CVc-G2-vpN">
             <objects>
                 <viewController id="hfo-x7-kva" customClass="FitnessViewController" customModule="planner" customModuleProvider="target" sceneMemberID="viewController">
@@ -565,7 +565,7 @@
                                                         <color key="backgroundColor" white="0.66666666669999997" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                         <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="15"/>
                                                         <inset key="titleEdgeInsets" minX="0.0" minY="0.0" maxX="-50" maxY="15"/>
-                                                        <state key="normal" title="Watch RIng">
+                                                        <state key="normal" title="Watch Ring">
                                                             <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                         </state>
                                                     </button>
@@ -574,27 +574,36 @@
                                         </subviews>
                                     </stackView>
                                     <stackView opaque="NO" contentMode="scaleToFill" ambiguous="YES" axis="vertical" spacing="37" translatesAutoresizingMaskIntoConstraints="NO" id="Dce-xw-PUl">
-                                        <rect key="frame" x="14" y="65" width="31" height="164"/>
+                                        <rect key="frame" x="14" y="65" width="38" height="146"/>
                                         <subviews>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="JWY-Ag-9aU">
-                                                <rect key="frame" x="0.0" y="0.0" width="31" height="30"/>
-                                                <color key="backgroundColor" white="0.66666666669999997" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                <rect key="frame" x="0.0" y="0.0" width="38" height="24"/>
+                                                <color key="backgroundColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                                                <color key="tintColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                <inset key="contentEdgeInsets" minX="4" minY="3" maxX="3" maxY="3"/>
                                                 <state key="normal" title="Mon"/>
                                                 <connections>
                                                     <action selector="MonWorkout:" destination="hfo-x7-kva" eventType="touchUpInside" id="ug2-xA-4wA"/>
                                                 </connections>
                                             </button>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="rPe-d1-e72">
-                                                <rect key="frame" x="0.0" y="67" width="31" height="30"/>
-                                                <color key="backgroundColor" white="0.66666666669999997" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                <rect key="frame" x="0.0" y="61" width="38" height="24"/>
+                                                <color key="backgroundColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                                                <color key="tintColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                <inset key="contentEdgeInsets" minX="4" minY="3" maxX="3" maxY="3"/>
                                                 <state key="normal" title="Tue"/>
                                                 <connections>
                                                     <action selector="TueWorkout:" destination="hfo-x7-kva" eventType="touchUpInside" id="xZa-3b-0Fg"/>
                                                 </connections>
                                             </button>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="oiw-Bj-oeR">
-                                                <rect key="frame" x="0.0" y="134" width="31" height="30"/>
-                                                <color key="backgroundColor" white="0.66666666669999997" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                <rect key="frame" x="0.0" y="122" width="38" height="24"/>
+                                                <color key="backgroundColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                                                <color key="tintColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                <inset key="contentEdgeInsets" minX="4" minY="3" maxX="3" maxY="3"/>
                                                 <state key="normal" title="Wed"/>
                                                 <connections>
                                                     <action selector="WedWorkout:" destination="hfo-x7-kva" eventType="touchUpInside" id="9Xf-6q-2je"/>
@@ -603,27 +612,36 @@
                                         </subviews>
                                     </stackView>
                                     <stackView opaque="NO" contentMode="scaleToFill" ambiguous="YES" axis="vertical" spacing="37" translatesAutoresizingMaskIntoConstraints="NO" id="oc7-bN-CID">
-                                        <rect key="frame" x="330" y="65" width="32" height="164"/>
+                                        <rect key="frame" x="330" y="65" width="39" height="146"/>
                                         <subviews>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="7hw-gH-0vu">
-                                                <rect key="frame" x="0.0" y="0.0" width="32" height="30"/>
-                                                <color key="backgroundColor" white="0.66666666669999997" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                <rect key="frame" x="0.0" y="0.0" width="39" height="24"/>
+                                                <color key="backgroundColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                                                <color key="tintColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                <inset key="contentEdgeInsets" minX="4" minY="3" maxX="3" maxY="3"/>
                                                 <state key="normal" title="Thur"/>
                                                 <connections>
                                                     <action selector="ThurWorkout:" destination="hfo-x7-kva" eventType="touchUpInside" id="sQA-op-baE"/>
                                                 </connections>
                                             </button>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="1MC-8b-A9P">
-                                                <rect key="frame" x="0.0" y="67" width="32" height="30"/>
-                                                <color key="backgroundColor" white="0.66666666669999997" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                <rect key="frame" x="0.0" y="61" width="39" height="24"/>
+                                                <color key="backgroundColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                                                <color key="tintColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                <inset key="contentEdgeInsets" minX="4" minY="3" maxX="3" maxY="3"/>
                                                 <state key="normal" title="Fri"/>
                                                 <connections>
                                                     <action selector="FriWorkout:" destination="hfo-x7-kva" eventType="touchUpInside" id="hxZ-zn-iAh"/>
                                                 </connections>
                                             </button>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="laa-uu-eKu">
-                                                <rect key="frame" x="0.0" y="134" width="32" height="30"/>
-                                                <color key="backgroundColor" white="0.66666666669999997" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                <rect key="frame" x="0.0" y="122" width="39" height="24"/>
+                                                <color key="backgroundColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                                                <color key="tintColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                <inset key="contentEdgeInsets" minX="4" minY="3" maxX="3" maxY="3"/>
                                                 <state key="normal" title="Sat"/>
                                                 <connections>
                                                     <action selector="SatWorkout:" destination="hfo-x7-kva" eventType="touchUpInside" id="vGL-7y-poI"/>
@@ -637,20 +655,132 @@
                                         <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         <nil key="highlightedColor"/>
                                     </label>
-                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Fitness Tracker" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="KV4-oW-HzJ">
-                                        <rect key="frame" x="131" y="265" width="117" height="21"/>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Fitness Tracker" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="KV4-oW-HzJ">
+                                        <rect key="frame" x="125" y="265" width="125" height="21"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <color key="backgroundColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                         <nil key="textColor"/>
                                         <nil key="highlightedColor"/>
                                     </label>
-                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Workouts" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="h7f-wp-SBO">
-                                        <rect key="frame" x="151" y="-1" width="73" height="21"/>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Workouts" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="h7f-wp-SBO">
+                                        <rect key="frame" x="146" y="-1" width="87" height="21"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <color key="backgroundColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                         <nil key="textColor"/>
                                         <nil key="highlightedColor"/>
                                     </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="lA5-bO-QEg">
+                                        <rect key="frame" x="83" y="328.33333333333331" width="74" height="15"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="aJP-9z-HjZ">
+                                        <rect key="frame" x="268" y="328.33333333333331" width="74" height="15"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="5tc-8h-PbS">
+                                        <rect key="frame" x="268" y="406" width="74" height="15"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="SpC-RU-zLW">
+                                        <rect key="frame" x="83" y="406" width="74" height="15"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="7w2-tr-R74">
+                                        <rect key="frame" x="83" y="487" width="74" height="15"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Fl2-OZ-gNe">
+                                        <rect key="frame" x="78" y="568" width="91" height="15"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="EXy-qi-oOp">
+                                        <rect key="frame" x="268" y="568" width="74" height="15"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="2L1-np-s32">
+                                        <rect key="frame" x="262" y="649" width="87" height="15"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="9RQ-zA-JEd">
+                                        <rect key="frame" x="83" y="649" width="74" height="15"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="jjp-o4-Dl6">
+                                        <rect key="frame" x="268" y="487" width="74" height="15"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="7RP-q8-wwf">
+                                        <rect key="frame" x="21" y="301" width="44" height="44"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                    </imageView>
+                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="qDg-YY-hql">
+                                        <rect key="frame" x="21" y="384" width="44" height="44"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                    </imageView>
+                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="IpI-os-PzI">
+                                        <rect key="frame" x="21" y="465" width="44" height="44"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                    </imageView>
+                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="HgD-Jq-0RH">
+                                        <rect key="frame" x="21" y="544" width="44" height="44"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                    </imageView>
+                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="ZUs-yi-xCl">
+                                        <rect key="frame" x="21" y="627" width="44" height="44"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                    </imageView>
+                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="aOt-R2-m6c">
+                                        <rect key="frame" x="205" y="627" width="44" height="44"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                    </imageView>
+                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="ouA-Ua-Bgf">
+                                        <rect key="frame" x="205" y="544" width="44" height="44"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                    </imageView>
+                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="d91-hf-aPU">
+                                        <rect key="frame" x="205" y="464" width="44" height="44"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                    </imageView>
+                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="cWg-nf-tBn">
+                                        <rect key="frame" x="205" y="384" width="44" height="44"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                    </imageView>
+                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="1ba-qL-Zuv">
+                                        <rect key="frame" x="205" y="301" width="44" height="44"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                    </imageView>
                                 </subviews>
                                 <color key="backgroundColor" red="1" green="1" blue="1" alpha="0.0" colorSpace="custom" customColorSpace="displayP3"/>
                                 <constraints>
@@ -684,7 +814,7 @@
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="ujl-Gm-FqE"/>
                     </view>
-                    <navigationItem key="navigationItem" title="Today" id="uvF-fV-Tff">
+                    <navigationItem key="navigationItem" title="Fitness" id="uvF-fV-Tff">
                         <barButtonItem key="leftBarButtonItem" title="Home" id="tfk-Sz-fa3">
                             <connections>
                                 <segue destination="BYZ-38-t0r" kind="push" id="MAC-j1-Cvu"/>
@@ -692,8 +822,29 @@
                         </barButtonItem>
                     </navigationItem>
                     <connections>
+                        <outlet property="Calorie_img" destination="HgD-Jq-0RH" id="JHl-bs-oM1"/>
+                        <outlet property="Calorie_label" destination="Fl2-OZ-gNe" id="aT6-Cd-95u"/>
+                        <outlet property="Exercise_img" destination="ouA-Ua-Bgf" id="6OG-jD-tRI"/>
+                        <outlet property="Exercise_label" destination="EXy-qi-oOp" id="S0b-0z-kg3"/>
+                        <outlet property="Mind_img" destination="d91-hf-aPU" id="lba-eN-l7d"/>
+                        <outlet property="Mind_label" destination="jjp-o4-Dl6" id="8f8-bJ-HHZ"/>
+                        <outlet property="Move_img" destination="IpI-os-PzI" id="ftr-Db-Wq7"/>
+                        <outlet property="Move_label" destination="7w2-tr-R74" id="4zo-Y1-T2N"/>
+                        <outlet property="Sleep_img" destination="1ba-qL-Zuv" id="yaN-CY-gya"/>
+                        <outlet property="Sleep_label" destination="aJP-9z-HjZ" id="sCe-nJ-XOR"/>
+                        <outlet property="Stand_img" destination="cWg-nf-tBn" id="S6b-o6-z37"/>
+                        <outlet property="Stand_label" destination="5tc-8h-PbS" id="170-XP-MT1"/>
+                        <outlet property="Step_label" destination="lA5-bO-QEg" id="0gL-Ws-y01"/>
+                        <outlet property="Steps_img" destination="7RP-q8-wwf" id="h9c-P7-DDX"/>
+                        <outlet property="Watch_img" destination="aOt-R2-m6c" id="lkJ-cI-Gqc"/>
+                        <outlet property="Watch_label" destination="2L1-np-s32" id="FaP-dQ-ud3"/>
+                        <outlet property="Water_img" destination="ZUs-yi-xCl" id="P48-A5-nPC"/>
+                        <outlet property="Water_label" destination="9RQ-zA-JEd" id="G4n-N1-l2o"/>
+                        <outlet property="Workouts_img" destination="qDg-YY-hql" id="M41-lw-NKd"/>
+                        <outlet property="Workouts_label" destination="SpC-RU-zLW" id="u7n-g4-f56"/>
                         <outlet property="calorie" destination="Oar-Oy-sk2" id="SPk-JS-HBo"/>
                         <outlet property="exercise" destination="Ttx-Ec-q8H" id="WFn-zg-NdK"/>
+                        <outlet property="fitness_title" destination="KV4-oW-HzJ" id="BGi-dJ-aTs"/>
                         <outlet property="mind" destination="2DW-WJ-i21" id="VwO-gJ-8Ye"/>
                         <outlet property="move" destination="OGt-Ib-1n6" id="4xS-zo-rkE"/>
                         <outlet property="ring" destination="luI-hA-W0m" id="6tH-PO-Nxg"/>
@@ -702,6 +853,7 @@
                         <outlet property="step" destination="BF6-Ru-cXR" id="JwD-vK-xll"/>
                         <outlet property="water" destination="KVc-EC-Vvk" id="X3P-5C-7Wp"/>
                         <outlet property="workouts" destination="B76-6c-9SB" id="Sck-4f-EtO"/>
+                        <outlet property="workouts_title" destination="h7f-wp-SBO" id="kCR-1t-hda"/>
                         <outletCollection property="allButtons" destination="Ttx-Ec-q8H" collectionClass="NSMutableArray" id="rfR-3i-cfZ"/>
                         <outletCollection property="allButtons" destination="Oar-Oy-sk2" collectionClass="NSMutableArray" id="pfL-4u-Zz5"/>
                         <outletCollection property="allButtons" destination="KVc-EC-Vvk" collectionClass="NSMutableArray" id="zRJ-Ih-mmq"/>
@@ -712,6 +864,12 @@
                         <outletCollection property="allButtons" destination="B76-6c-9SB" collectionClass="NSMutableArray" id="B4w-eM-gdH"/>
                         <outletCollection property="allButtons" destination="mnR-cF-7ZO" collectionClass="NSMutableArray" id="p1d-Eh-JPt"/>
                         <outletCollection property="allButtons" destination="BF6-Ru-cXR" collectionClass="NSMutableArray" id="AFy-W7-bcL"/>
+                        <outletCollection property="WorkoutButtons" destination="JWY-Ag-9aU" collectionClass="NSMutableArray" id="u9C-L3-x9B"/>
+                        <outletCollection property="WorkoutButtons" destination="rPe-d1-e72" collectionClass="NSMutableArray" id="dCE-Ed-9TH"/>
+                        <outletCollection property="WorkoutButtons" destination="oiw-Bj-oeR" collectionClass="NSMutableArray" id="gyw-qZ-oes"/>
+                        <outletCollection property="WorkoutButtons" destination="7hw-gH-0vu" collectionClass="NSMutableArray" id="1Ho-5x-KfA"/>
+                        <outletCollection property="WorkoutButtons" destination="1MC-8b-A9P" collectionClass="NSMutableArray" id="YII-RF-cYI"/>
+                        <outletCollection property="WorkoutButtons" destination="laa-uu-eKu" collectionClass="NSMutableArray" id="xpb-1v-B4A"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="j4a-tW-EYN" userLabel="First Responder" sceneMemberID="firstResponder"/>
