@@ -458,7 +458,7 @@ class fitnessTracker {
                         
                         if sample.value == HKCategoryValueSleepAnalysis.asleep.rawValue {
                             minutes += Int(sample.endDate.timeIntervalSince(sample.startDate) / 60)
-                            self.sleeps = minutes
+                            self.sleeps = minutes/60
                         }
                     }
                 }

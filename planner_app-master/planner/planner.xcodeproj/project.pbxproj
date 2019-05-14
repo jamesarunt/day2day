@@ -35,6 +35,8 @@
 		43A9CA83228A651700E25F07 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 43A9CA82228A651600E25F07 /* ViewController.swift */; };
 		43A9CA85228A69E200E25F07 /* lock.png in Resources */ = {isa = PBXBuildFile; fileRef = 43A9CA84228A69E200E25F07 /* lock.png */; };
 		43A9CA87228A75A000E25F07 /* CalendarViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 43A9CA86228A75A000E25F07 /* CalendarViewController.swift */; };
+		43A9CA8B228A7C7900E25F07 /* AddEventViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 43A9CA8A228A7C7900E25F07 /* AddEventViewController.swift */; };
+		43A9CA8D228A864D00E25F07 /* arun app logo2.png in Resources */ = {isa = PBXBuildFile; fileRef = 43A9CA8C228A864C00E25F07 /* arun app logo2.png */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -92,6 +94,8 @@
 		43A9CA82228A651600E25F07 /* ViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		43A9CA84228A69E200E25F07 /* lock.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = lock.png; sourceTree = "<group>"; };
 		43A9CA86228A75A000E25F07 /* CalendarViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CalendarViewController.swift; sourceTree = "<group>"; };
+		43A9CA8A228A7C7900E25F07 /* AddEventViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AddEventViewController.swift; sourceTree = "<group>"; };
+		43A9CA8C228A864C00E25F07 /* arun app logo2.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "arun app logo2.png"; path = "../../../../../arun app logo2.png"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -155,6 +159,7 @@
 			children = (
 				198518E322893D880092F09E /* planner.entitlements */,
 				198518E0228939D50092F09E /* SleepAnalysis.entitlements */,
+				43A9CA8A228A7C7900E25F07 /* AddEventViewController.swift */,
 				19312F99227D05C700361490 /* AddAssignmentViewController.swift */,
 				43A9CA5D2288F71700E25F07 /* fitnessLogic.swift */,
 				43A9CA5C2288F71700E25F07 /* FitnessViewController.swift */,
@@ -167,6 +172,7 @@
 				19DFF5D2227102E600704ED1 /* Main.storyboard */,
 				1966DBF12286CECE0058207E /* RemoveAssignmentViewController.swift */,
 				198518DB228935C60092F09E /* Info.plist */,
+				43A9CA8C228A864C00E25F07 /* arun app logo2.png */,
 				198518DC228935C60092F09E /* SleepViewController.swift */,
 				43A9CA7E228A4F2D00E25F07 /* sad.png */,
 				43A9CA84228A69E200E25F07 /* lock.png */,
@@ -321,6 +327,7 @@
 				43A9CA782289BBD100E25F07 /* sat.pdf in Resources */,
 				43A9CA7B2289BBD100E25F07 /* fri.pdf in Resources */,
 				43A9CA7A2289BBD100E25F07 /* tue.pdf in Resources */,
+				43A9CA8D228A864D00E25F07 /* arun app logo2.png in Resources */,
 				43A9CA7F228A4F2D00E25F07 /* sad.png in Resources */,
 				19DFF5D4227102E600704ED1 /* Main.storyboard in Resources */,
 				43A9CA652288F77200E25F07 /* mon.pdf in Resources */,
@@ -350,6 +357,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				43A9CA87228A75A000E25F07 /* CalendarViewController.swift in Sources */,
+				43A9CA8B228A7C7900E25F07 /* AddEventViewController.swift in Sources */,
 				19DFF5D1227102E600704ED1 /* MainViewController.swift in Sources */,
 				43A9CA5F2288F71700E25F07 /* FitnessViewController.swift in Sources */,
 				198518DE228935C60092F09E /* SleepViewController.swift in Sources */,

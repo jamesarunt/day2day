@@ -51,7 +51,7 @@
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="tOj-Np-0yA">
-                                <rect key="frame" x="69.666666666666686" y="491.66666666666674" width="236" height="59"/>
+                                <rect key="frame" x="69.666666666666686" y="535.66666666666663" width="236" height="59"/>
                                 <color key="backgroundColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="236" id="4ZH-i7-jZG"/>
@@ -67,7 +67,7 @@
                                 </connections>
                             </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Day2Day" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="7Pd-Gx-Moz">
-                                <rect key="frame" x="48" y="105" width="279" height="33.666666666666657"/>
+                                <rect key="frame" x="48" y="149" width="279" height="33.666666666666657"/>
                                 <fontDescription key="fontDescription" type="boldSystem" pointSize="28"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
@@ -97,7 +97,7 @@
                                 <nil key="highlightedColor"/>
                             </label>
                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="center" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="Fl8-6D-MJj">
-                                <rect key="frame" x="131" y="625" width="112" height="65.333333333333371"/>
+                                <rect key="frame" x="131" y="669" width="112" height="65.333333333333371"/>
                                 <subviews>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Night Mode" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="zGw-uh-gec">
                                         <rect key="frame" x="0.0" y="0.0" width="112" height="26.333333333333332"/>
@@ -1075,7 +1075,7 @@
         <!--Biometrics Authentication-->
         <scene sceneID="qlI-49-FL6">
             <objects>
-                <viewController id="y02-bM-YmC" customClass="ViewController" customModule="Biometrics_Authentication" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="y02-bM-YmC" customClass="ViewController" customModule="planner" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="5My-EI-m4J">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -1138,7 +1138,7 @@
         <!--Calendar View Controller-->
         <scene sceneID="6xn-qP-ekk">
             <objects>
-                <viewController storyboardIdentifier="CalendarViewController" useStoryboardIdentifierAsRestorationIdentifier="YES" id="OZ1-gX-Lct" customClass="CalendarViewController" customModule="SwiftCalendar" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="CalendarViewController" useStoryboardIdentifierAsRestorationIdentifier="YES" id="OZ1-gX-Lct" customClass="CalendarViewController" customModule="planner" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="8Bc-Ws-gXC">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -1237,11 +1237,11 @@
                                         <constraints>
                                             <constraint firstAttribute="height" constant="50" id="gAX-P4-TVs"/>
                                         </constraints>
-                                        <state key="normal" title="OK">
+                                        <state key="normal" title="Add Event">
                                             <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         </state>
                                         <connections>
-                                            <action selector="selectDate:" destination="OZ1-gX-Lct" eventType="touchUpInside" id="L7t-sH-ook"/>
+                                            <action selector="addEventToCalendarTapped:" destination="OZ1-gX-Lct" eventType="touchUpInside" id="tag-S8-eBV"/>
                                         </connections>
                                     </button>
                                 </subviews>
@@ -1276,7 +1276,6 @@
                                 <segue destination="BYZ-38-t0r" kind="show" id="vBL-eF-BqE"/>
                             </connections>
                         </barButtonItem>
-                        <barButtonItem key="rightBarButtonItem" systemItem="add" id="q7P-qW-bY1"/>
                     </navigationItem>
                     <connections>
                         <outlet property="calendar" destination="Lbv-Zo-s8W" id="qvo-Yq-4oc"/>
@@ -1313,6 +1312,7 @@
         <image name="face" width="48" height="48"/>
     </resources>
     <inferredMetricsTieBreakers>
+        <segue reference="uag-mr-ebe"/>
         <segue reference="vBL-eF-BqE"/>
     </inferredMetricsTieBreakers>
 </document>

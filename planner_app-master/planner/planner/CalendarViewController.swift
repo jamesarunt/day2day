@@ -1,76 +1,15 @@
 //CocoaPods and help from resources used
 
 import UIKit
+import EventKit
+import EventKitUI
 
 
-extension Date {
-    
-    func getDaysInMonthFC() -> Int{
-        let calendar = Calendar.current
-        
-        let dateComponents = DateComponents(year: calendar.component(.year, from: self), month: calendar.component(.month, from: self))
-        let date = calendar.date(from: dateComponents)!
-        
-        let range = calendar.range(of: .day, in: .month, for: date)!
-        let numDays = range.count
-        
-        return numDays
-    }
-    
-    func addMonthFC(month: Int) -> Date {
-        return Calendar.current.date(byAdding: .month, value: month, to: self)!
-    }
-    
-    func startOfMonthFC() -> Date {
-        return Calendar.current.date(from: Calendar.current.dateComponents([.year, .month], from: Calendar.current.startOfDay(for: self)))!
-    }
-    
-    func endOfMonthFC() -> Date {
-        return Calendar.current.date(byAdding: DateComponents(month: 1, day: -1), to: self.startOfMonthFC())!
-    }
-    
-    func getDayOfWeekFC() -> Int? {
-        let myCalendar = Calendar(identifier: .gregorian)
-        let weekDay = myCalendar.component(.weekday, from: self)
-        return weekDay
-    }
-    
-    func getHeaderTitleFC() -> String {
-        let dateFormatter = DateFormatter()
-        dateFormatter.dateFormat = "MMM, YYYY"
-        return dateFormatter.string(from: self)
-    }
-    
-    func getDayFC(day: Int) -> Date {
-        let day = Calendar.current.date(byAdding: .day, value: day, to: self)!
-        return Calendar.current.date(bySettingHour: 0, minute: 0, second: 0, of: day)!
-    }
-    
-    func getYearOnlyFC() -> String {
-        let dateFormatter = DateFormatter()
-        dateFormatter.dateFormat = "YYYY"
-        return dateFormatter.string(from: self)
-    }
-    
-    func getTitleDateFC() -> String {
-        let dateFormatter = DateFormatter()
-        dateFormatter.dateFormat = "EEE, MMM dd"
-        return dateFormatter.string(from: self)
-    }
-}
 
-extension UIView {
-    func callRecursively(level: Int = 0, _ body: (_ subview: UIView, _ level: Int) -> Void) {
-        body(self, level)
-        subviews.forEach { $0.callRecursively(level: level + 1, body) }
-    }
-}
-
-protocol CalendarCallBack {
-    func didSelectDate(date: Date)
-}
 
 class CalendarViewController: UIViewController, UICollectionViewDataSource, UICollectionViewDelegate {
+    
+    let eventStore = EKEventStore()
     
     @IBOutlet weak var calendar: UICollectionView!
     @IBOutlet weak var year: UILabel!
@@ -91,7 +30,25 @@ class CalendarViewController: UIViewController, UICollectionViewDataSource, UICo
         }
     }
     
+    
+    @IBAction func addEventToCalendarTapped(_ sender: Any) {
+        print("adding event")
+        self.eventStore.requestAccess(to: .event) { [unowned self] (granted, error) in
+            if granted && error == nil {
+                let event = self.createEvent(for: self.eventStore)
+                
+                let eventViewController = EKEventEditViewController()
+                eventViewController.editViewDelegate = self
+                eventViewController.event = event
+                eventViewController.eventStore = self.eventStore
+                
+                self.present(eventViewController, animated: true, completion: nil)
+            }
+        }
+    }
+    
     @IBAction func selectDate(_ sender: UIButton){
+        print("selecting date")
         UIView.animate(withDuration: 0.25, animations: {
             self.view.removeConstraint(self.heightConstraint!)
             self.verticalConstraint!.constant = self.view.frame.size.height
@@ -154,6 +111,24 @@ class CalendarViewController: UIViewController, UICollectionViewDataSource, UICo
     override func viewWillAppear(_ animated: Bool) {
         super.viewWillAppear(animated)
         calendar.reloadData()
+    }
+    
+    func createEvent(for store: EKEventStore) -> EKEvent {
+        let event = EKEvent(eventStore: store)
+        event.title = "Sample event"
+        event.location = "1 Infinite Loop; Cupertino, CA 95014"
+        event.notes = "Sample notes"
+        
+        var endDateComponent = DateComponents()
+        endDateComponent.hour = 2
+        
+        event.startDate = Date()
+        event.endDate = Calendar.current.date(byAdding: endDateComponent, to: Date())
+        event.calendar = store.defaultCalendarForNewEvents
+        
+        event.addAlarm(EKAlarm(absoluteDate: event.startDate))
+        
+        return event
     }
     
     func scrollToIndex() {
@@ -275,3 +250,96 @@ class CalendarViewController: UIViewController, UICollectionViewDataSource, UICo
     
 }
 
+extension Date {
+    
+    func getDaysInMonthFC() -> Int{
+        let calendar = Calendar.current
+        
+        let dateComponents = DateComponents(year: calendar.component(.year, from: self), month: calendar.component(.month, from: self))
+        let date = calendar.date(from: dateComponents)!
+        
+        let range = calendar.range(of: .day, in: .month, for: date)!
+        let numDays = range.count
+        
+        return numDays
+    }
+    
+    func addMonthFC(month: Int) -> Date {
+        return Calendar.current.date(byAdding: .month, value: month, to: self)!
+    }
+    
+    func startOfMonthFC() -> Date {
+        return Calendar.current.date(from: Calendar.current.dateComponents([.year, .month], from: Calendar.current.startOfDay(for: self)))!
+    }
+    
+    func endOfMonthFC() -> Date {
+        return Calendar.current.date(byAdding: DateComponents(month: 1, day: -1), to: self.startOfMonthFC())!
+    }
+    
+    func getDayOfWeekFC() -> Int? {
+        let myCalendar = Calendar(identifier: .gregorian)
+        let weekDay = myCalendar.component(.weekday, from: self)
+        return weekDay
+    }
+    
+    func getHeaderTitleFC() -> String {
+        let dateFormatter = DateFormatter()
+        dateFormatter.dateFormat = "MMM, YYYY"
+        return dateFormatter.string(from: self)
+    }
+    
+    func getDayFC(day: Int) -> Date {
+        let day = Calendar.current.date(byAdding: .day, value: day, to: self)!
+        return Calendar.current.date(bySettingHour: 0, minute: 0, second: 0, of: day)!
+    }
+    
+    func getYearOnlyFC() -> String {
+        let dateFormatter = DateFormatter()
+        dateFormatter.dateFormat = "YYYY"
+        return dateFormatter.string(from: self)
+    }
+    
+    func getTitleDateFC() -> String {
+        let dateFormatter = DateFormatter()
+        dateFormatter.dateFormat = "EEE, MMM dd"
+        return dateFormatter.string(from: self)
+    }
+}
+
+extension UIView {
+    func callRecursively(level: Int = 0, _ body: (_ subview: UIView, _ level: Int) -> Void) {
+        body(self, level)
+        subviews.forEach { $0.callRecursively(level: level + 1, body) }
+    }
+}
+
+protocol CalendarCallBack {
+    func didSelectDate(date: Date)
+}
+
+extension CalendarViewController: EKEventEditViewDelegate {
+    func eventEditViewController(_ controller: EKEventEditViewController, didCompleteWith action: EKEventEditViewAction) {
+        guard controller.event != nil else {
+            fatalError("event should not be nil")
+        }
+        
+        switch action {
+        case .saved:
+            save(controller.event!, from: controller)
+        case .canceled:
+            print("Event not added to calendar")
+        case .deleted:
+            print("Event deleted from calendar")
+        }
+        
+        controller.dismiss(animated: true, completion: nil)
+    }
+    
+    func save(_ event: EKEvent, from controller: EKEventEditViewController) {
+        do {
+            try self.eventStore.save(event, span: .thisEvent)
+        } catch {
+            print("Failure saving event")
+        }
+    }
+}
