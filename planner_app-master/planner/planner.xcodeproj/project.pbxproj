@@ -94,7 +94,7 @@
 		43A9CA84228A69E200E25F07 /* lock.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = lock.png; sourceTree = "<group>"; };
 		43A9CA86228A75A000E25F07 /* CalendarViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CalendarViewController.swift; sourceTree = "<group>"; };
 		43A9CA8A228A7C7900E25F07 /* AddEventViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AddEventViewController.swift; sourceTree = "<group>"; };
-		43A9CA8C228A864C00E25F07 /* arun app logo2.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "arun app logo2.png"; path = "../../../../../arun app logo2.png"; sourceTree = "<group>"; };
+		43A9CA8C228A864C00E25F07 /* arun app logo2.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "arun app logo2.png"; path = "/Users/nishant/Desktop/mergesleep/day2day/planner_app-master/planner/planner/arun app logo2.png"; sourceTree = "<absolute>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
