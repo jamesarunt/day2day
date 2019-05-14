@@ -34,6 +34,7 @@
 		43A9CA81228A500200E25F07 /* happy.png in Resources */ = {isa = PBXBuildFile; fileRef = 43A9CA80228A500200E25F07 /* happy.png */; };
 		43A9CA83228A651700E25F07 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 43A9CA82228A651600E25F07 /* ViewController.swift */; };
 		43A9CA85228A69E200E25F07 /* lock.png in Resources */ = {isa = PBXBuildFile; fileRef = 43A9CA84228A69E200E25F07 /* lock.png */; };
+		43A9CA87228A75A000E25F07 /* CalendarViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 43A9CA86228A75A000E25F07 /* CalendarViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -90,6 +91,7 @@
 		43A9CA80228A500200E25F07 /* happy.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = happy.png; sourceTree = "<group>"; };
 		43A9CA82228A651600E25F07 /* ViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		43A9CA84228A69E200E25F07 /* lock.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = lock.png; sourceTree = "<group>"; };
+		43A9CA86228A75A000E25F07 /* CalendarViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CalendarViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -160,6 +162,7 @@
 				199AC3B4227CCDC100A26CEC /* Assignment.swift */,
 				19DFF5CE227102E600704ED1 /* AppDelegate.swift */,
 				19DFF5D0227102E600704ED1 /* MainViewController.swift */,
+				43A9CA86228A75A000E25F07 /* CalendarViewController.swift */,
 				43A9CA82228A651600E25F07 /* ViewController.swift */,
 				19DFF5D2227102E600704ED1 /* Main.storyboard */,
 				1966DBF12286CECE0058207E /* RemoveAssignmentViewController.swift */,
@@ -346,6 +349,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				43A9CA87228A75A000E25F07 /* CalendarViewController.swift in Sources */,
 				19DFF5D1227102E600704ED1 /* MainViewController.swift in Sources */,
 				43A9CA5F2288F71700E25F07 /* FitnessViewController.swift in Sources */,
 				198518DE228935C60092F09E /* SleepViewController.swift in Sources */,

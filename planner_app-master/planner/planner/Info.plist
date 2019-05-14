@@ -42,5 +42,7 @@
 	</array>
 	<key>NSFaceIDUsageDescription</key>
 	<string>Face Authentication</string>
+	<key>NSCalendarsUsageDescription</key>
+	<string>Day2Day needs your permission to add new events to your calendar.</string>
 </dict>
 </plist>

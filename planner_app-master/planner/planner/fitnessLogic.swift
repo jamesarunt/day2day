@@ -41,7 +41,7 @@ class fitnessTracker {
     let weight = HKObjectType.quantityType(forIdentifier: .bodyMass)
     
     init(){
-         print("initializing")
+         print("INITIALIZING")
         
          //setData()
          steps = 0
