@@ -32,6 +32,8 @@
 		43A9CA7B2289BBD100E25F07 /* fri.pdf in Resources */ = {isa = PBXBuildFile; fileRef = 43A9CA762289BBD100E25F07 /* fri.pdf */; };
 		43A9CA7F228A4F2D00E25F07 /* sad.png in Resources */ = {isa = PBXBuildFile; fileRef = 43A9CA7E228A4F2D00E25F07 /* sad.png */; };
 		43A9CA81228A500200E25F07 /* happy.png in Resources */ = {isa = PBXBuildFile; fileRef = 43A9CA80228A500200E25F07 /* happy.png */; };
+		43A9CA83228A651700E25F07 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 43A9CA82228A651600E25F07 /* ViewController.swift */; };
+		43A9CA85228A69E200E25F07 /* lock.png in Resources */ = {isa = PBXBuildFile; fileRef = 43A9CA84228A69E200E25F07 /* lock.png */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -86,6 +88,8 @@
 		43A9CA762289BBD100E25F07 /* fri.pdf */ = {isa = PBXFileReference; lastKnownFileType = image.pdf; path = fri.pdf; sourceTree = "<group>"; };
 		43A9CA7E228A4F2D00E25F07 /* sad.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = sad.png; sourceTree = "<group>"; };
 		43A9CA80228A500200E25F07 /* happy.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = happy.png; sourceTree = "<group>"; };
+		43A9CA82228A651600E25F07 /* ViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		43A9CA84228A69E200E25F07 /* lock.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = lock.png; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -156,11 +160,13 @@
 				199AC3B4227CCDC100A26CEC /* Assignment.swift */,
 				19DFF5CE227102E600704ED1 /* AppDelegate.swift */,
 				19DFF5D0227102E600704ED1 /* MainViewController.swift */,
+				43A9CA82228A651600E25F07 /* ViewController.swift */,
 				19DFF5D2227102E600704ED1 /* Main.storyboard */,
 				1966DBF12286CECE0058207E /* RemoveAssignmentViewController.swift */,
 				198518DB228935C60092F09E /* Info.plist */,
 				198518DC228935C60092F09E /* SleepViewController.swift */,
 				43A9CA7E228A4F2D00E25F07 /* sad.png */,
+				43A9CA84228A69E200E25F07 /* lock.png */,
 				43A9CA80228A500200E25F07 /* happy.png */,
 				19DFF5D8227102E700704ED1 /* Assets.xcassets */,
 				19DFF5DA227102E700704ED1 /* LaunchScreen.storyboard */,
@@ -304,6 +310,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				19DFF5DC227102E700704ED1 /* LaunchScreen.storyboard in Resources */,
+				43A9CA85228A69E200E25F07 /* lock.png in Resources */,
 				43A9CA672288F77D00E25F07 /* arun app logo2.png in Resources */,
 				43A9CA772289BBD100E25F07 /* thur.pdf in Resources */,
 				19DFF5D9227102E700704ED1 /* Assets.xcassets in Resources */,
@@ -343,6 +350,7 @@
 				43A9CA5F2288F71700E25F07 /* FitnessViewController.swift in Sources */,
 				198518DE228935C60092F09E /* SleepViewController.swift in Sources */,
 				19312F9A227D05C700361490 /* AddAssignmentViewController.swift in Sources */,
+				43A9CA83228A651700E25F07 /* ViewController.swift in Sources */,
 				199AC3B3227CCC6C00A26CEC /* AssignmentViewController.swift in Sources */,
 				19DFF5D7227102E600704ED1 /* planner.xcdatamodeld in Sources */,
 				199AC3B5227CCDC100A26CEC /* Assignment.swift in Sources */,
