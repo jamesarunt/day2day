@@ -36,7 +36,6 @@
 		43A9CA85228A69E200E25F07 /* lock.png in Resources */ = {isa = PBXBuildFile; fileRef = 43A9CA84228A69E200E25F07 /* lock.png */; };
 		43A9CA87228A75A000E25F07 /* CalendarViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 43A9CA86228A75A000E25F07 /* CalendarViewController.swift */; };
 		43A9CA8B228A7C7900E25F07 /* AddEventViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 43A9CA8A228A7C7900E25F07 /* AddEventViewController.swift */; };
-		43A9CA8D228A864D00E25F07 /* arun app logo2.png in Resources */ = {isa = PBXBuildFile; fileRef = 43A9CA8C228A864C00E25F07 /* arun app logo2.png */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -95,7 +94,7 @@
 		43A9CA84228A69E200E25F07 /* lock.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = lock.png; sourceTree = "<group>"; };
 		43A9CA86228A75A000E25F07 /* CalendarViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CalendarViewController.swift; sourceTree = "<group>"; };
 		43A9CA8A228A7C7900E25F07 /* AddEventViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AddEventViewController.swift; sourceTree = "<group>"; };
-		43A9CA8C228A864C00E25F07 /* arun app logo2.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "arun app logo2.png"; path = "../../../../../arun app logo2.png"; sourceTree = "<group>"; };
+		43A9CA8C228A864C00E25F07 /* arun app logo2.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "arun app logo2.png"; path = "/Users/nishant/Desktop/mergesleep/day2day/planner_app-master/planner/planner/arun app logo2.png"; sourceTree = "<absolute>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -327,7 +326,6 @@
 				43A9CA782289BBD100E25F07 /* sat.pdf in Resources */,
 				43A9CA7B2289BBD100E25F07 /* fri.pdf in Resources */,
 				43A9CA7A2289BBD100E25F07 /* tue.pdf in Resources */,
-				43A9CA8D228A864D00E25F07 /* arun app logo2.png in Resources */,
 				43A9CA7F228A4F2D00E25F07 /* sad.png in Resources */,
 				19DFF5D4227102E600704ED1 /* Main.storyboard in Resources */,
 				43A9CA652288F77200E25F07 /* mon.pdf in Resources */,
