@@ -35,7 +35,6 @@
 		43A9CA83228A651700E25F07 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 43A9CA82228A651600E25F07 /* ViewController.swift */; };
 		43A9CA85228A69E200E25F07 /* lock.png in Resources */ = {isa = PBXBuildFile; fileRef = 43A9CA84228A69E200E25F07 /* lock.png */; };
 		43A9CA87228A75A000E25F07 /* CalendarViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 43A9CA86228A75A000E25F07 /* CalendarViewController.swift */; };
-		43A9CA8B228A7C7900E25F07 /* AddEventViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 43A9CA8A228A7C7900E25F07 /* AddEventViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -93,7 +92,6 @@
 		43A9CA82228A651600E25F07 /* ViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		43A9CA84228A69E200E25F07 /* lock.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = lock.png; sourceTree = "<group>"; };
 		43A9CA86228A75A000E25F07 /* CalendarViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CalendarViewController.swift; sourceTree = "<group>"; };
-		43A9CA8A228A7C7900E25F07 /* AddEventViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AddEventViewController.swift; sourceTree = "<group>"; };
 		43A9CA8C228A864C00E25F07 /* arun app logo2.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "arun app logo2.png"; path = "/Users/nishant/Desktop/mergesleep/day2day/planner_app-master/planner/planner/arun app logo2.png"; sourceTree = "<absolute>"; };
 /* End PBXFileReference section */
 
@@ -158,7 +156,6 @@
 			children = (
 				198518E322893D880092F09E /* planner.entitlements */,
 				198518E0228939D50092F09E /* SleepAnalysis.entitlements */,
-				43A9CA8A228A7C7900E25F07 /* AddEventViewController.swift */,
 				19312F99227D05C700361490 /* AddAssignmentViewController.swift */,
 				43A9CA5D2288F71700E25F07 /* fitnessLogic.swift */,
 				43A9CA5C2288F71700E25F07 /* FitnessViewController.swift */,
@@ -355,7 +352,6 @@
 			buildActionMask = 2147483647;
 			files = (
 				43A9CA87228A75A000E25F07 /* CalendarViewController.swift in Sources */,
-				43A9CA8B228A7C7900E25F07 /* AddEventViewController.swift in Sources */,
 				19DFF5D1227102E600704ED1 /* MainViewController.swift in Sources */,
 				43A9CA5F2288F71700E25F07 /* FitnessViewController.swift in Sources */,
 				198518DE228935C60092F09E /* SleepViewController.swift in Sources */,

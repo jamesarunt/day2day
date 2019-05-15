@@ -115,9 +115,9 @@ class CalendarViewController: UIViewController, UICollectionViewDataSource, UICo
     
     func createEvent(for store: EKEventStore) -> EKEvent {
         let event = EKEvent(eventStore: store)
-        event.title = "Sample event"
-        event.location = "1 Infinite Loop; Cupertino, CA 95014"
-        event.notes = "Sample notes"
+        event.title = "Title"
+        event.location = "Location"
+        event.notes = "Notes"
         
         var endDateComponent = DateComponents()
         endDateComponent.hour = 2
